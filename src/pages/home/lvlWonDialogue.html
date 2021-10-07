@@ -1,0 +1,28 @@
+<div style="height:100%;padding:2vh" class="dark4">
+<div style="font-size:4vh;text-align:right">{{levelName}}</div>
+<div>
+
+	<img style="margin-left:1vw" class='avatarLvlWon' [src]="'assets/imgs/' + pic + '.png'">
+<div style="font-size:3vh;width:70%;float:right;margin-top:3vh;line-height:3vh;margin-right:2vw" [innerHTML]="content"></div>
+</div>
+
+<div *ngIf="problem>-1" style="position:absolute;bottom:18vh;margin-left:0;margin-right:0;left:0;right:.7vw">
+<div style="width:50%;float:left">
+  <canvas #rulesCanvas style="position:relative;z-index:1"></canvas> 
+</div>
+<div style="width:50%;float:right">
+  <canvas #charsCanvas style="position:relative"></canvas> 
+</div>
+
+</div>
+<div *ngIf="problem==-1" style="position:absolute;bottom:25vh;margin-left:0;margin-right:3vw;left:3vw;color:#888">
+There was a problem fetching other player's scores from the server, please try again later.
+</div>
+
+<div class="subtext" style="margin-left:20px;position:absolute;bottom:15vh">
+<i>* This is a realtime frequency distribution of how your best scores compare to the <b>{{problem | number:'1.0':'en-US'}}</b> uploaded scores from other players. </i>
+</div>
+
+<div (click)="next()" style="cursor:pointer;position:absolute;bottom:5vh;right:40px;font-size:14px;color:#ec9b00"><b>{{btn}}</b></div>
+<div (click)="optimize()" style="cursor:pointer;position:absolute;bottom:5vh;right:210px;font-size:14px;color:#ec9b00" ><b>OPTIMIZE</b></div>
+

@@ -1,0 +1,531 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pulseStar{
+
+}
+
+  .avatarLvlWon{
+    position:absolute;
+
+    /*
+  margin-top:-20px;
+  width:20vw;
+  max-width:130px;
+  float:left;
+  */
+  width:17vh;
+  max-width:21vw;
+}
+
+#rulesCanvas{
+  width:25% !important;
+}
+
+
+.unavailable{
+  opacity:.5;
+  pointer-events:none;
+}
+
+.dragIT{
+    -webkit-app-region: drag !important;
+
+}
+
+.dragIT:hover{
+    cursor:move !important;
+}
+
+.starrules{
+position:absolute;
+left:3vw;
+top:3vh;
+}
+
+.subtext{
+color:#888;
+font-size:1.5vh
+}
+
+.star{
+  width:30px;
+  margin-right:4px;
+}
+
+.starContainer{
+  position:absolute;left:35px;bottom:30px;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.alert-md .alert-button{
+color: #ec9b00;
+}
+
+.small{
+  font-size:1.5vh !important;
+  opacity:.5;
+  padding-left:10px;
+}
+
+.makeuser-modal .modal-wrapper{
+  height:50% !important;
+}
+.userimg{
+  float:left;
+  width:15vh;
+  margin-right:15px;
+  cursor:pointer;
+}
+.halfopac{
+  opacity:.5
+}
+.fullopac{
+  opacity:1 !important;
+}
+.ratestar{
+  color:#ffd74a;cursor:pointer;opacity:.5
+}
+
+.red{
+  color:red;
+}
+.orange{
+  color:#ec9b00;
+}
+select{
+  background:transparent;
+  color:white;
+  border:none;
+}
+
+
+.bck{
+ background-image:url('../assets/imgs/darkbck.png');
+  background-size:cover !important;
+  background-position-y: 0% !important;
+  width:100%;
+  height:100%;
+}
+
+.lightbck{
+ background-image:url('../assets/imgs/whitebck.png');
+}
+
+
+
+.alertButton{
+      text-align: right;
+    text-align: end;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ec9b00;
+    background-color: transparent;
+    margin: 0 8px 0 0;
+    padding: 10px;
+    float:right;
+    font-size:2vh;
+}
+
+.alertButton2{
+      text-align: right;
+    text-align: end;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #00909d;
+    background-color: transparent;
+    margin: 0 8px 0 0;
+    padding: 10px;
+    float:right;
+    font-size:2vh;
+}
+
+
+.modArea{
+width:100% !important;
+height:90% !important;
+color:white !important;
+background:rgba(39,40,34,.8) !important;
+border-bottom:none;
+font-size:3vh;
+padding:2vh;
+resize: none; 
+}
+
+.segment-md .segment-button.segment-activated {
+ border-color:#ec9b00 !important;
+ font-weight:bold
+
+}
+.segment-md .segment-button{
+   border-bottom-color:transparent !important;
+}
+
+.dark, page-home .segment-md.dark .segment-button, page-home .list.list-md.dark button{
+color:white !important;
+background:rgba(39,40,34,.67) !important;
+text-shadow:0px 0px 15px rgb(39,40,34);
+//background:rgb(39,40,34)
+}
+
+.dark2, page-home .segment-md.dark2 .segment-button, page-home .list.list-md.dark2 button{
+color:white !important;
+background:rgba(39,40,34,.88) !important;
+text-shadow:0px 0px 10px rgb(39,40,34);
+//background:rgb(39,40,34)
+}
+
+.dark3, page-home .segment-md.dark2 .segment-button, page-home .list.list-md.dark2 button{
+color:white !important;
+//background:rgba(39,40,34,.88) !important;
+text-shadow:0px 0px 10px rgb(39,40,34);
+background:rgba(39,40,34,.98)
+}
+
+.dark4, page-home .segment-md.dark2 .segment-button, page-home .list.list-md.dark2 button{
+color:white !important;
+text-shadow:0px 0px 10px rgb(39,40,34);
+background:rgba(39,40,34,1)
+}
+
+.light, page-home .segment-md.light .segment-button, page-home .list.list-md.light button{
+  color:black !important;
+  //background:rgb(255,255,255)
+  background:rgba(255,255,255,.5) !important;
+  text-shadow:0px 0px 10px rgb(255,255,255);
+}
+
+.light2, page-home .segment-md.light .segment-button, page-home .list.list-md.light button {
+  color:black !important;
+  background:rgba(255,255,255,.8) !important;
+  text-shadow:0px 0px 10px rgb(255,255,255);
+}
+
+
+
+
+ion-modal ion-backdrop{
+  visibility:visible !important;
+}
+
+.itm{
+  color:white !important;
+  background:#272822 !important;
+}
+.sel{
+  background:#274822 !important;
+  font-weight:bold !important;
+}
+
+.expanded{
+height:50% !important;
+}
+.noDrag{
+  -webkit-app-region: no-drag !important;
+}
+
+.hov { -webkit-transition: .2s;-webkit-app-region: no-drag !important}
+.hov:hover { cursor: pointer; -webkit-transform: scale(1.02);opacity:1 !important}
+
+
+.grow { -webkit-transition: .2s;-webkit-app-region: no-drag !important}
+.grow:hover { -webkit-transform: scale(1.02);cursor: pointer; cursor: hand;}
+
+.grow2 { -webkit-transition: .2s;-webkit-app-region: no-drag !important}
+.grow2:hover { -webkit-transform: scale(1.02);cursor: pointer; cursor: hand;opacity:.8 !important}
+
+.flags { -webkit-transition: .2s;-webkit-app-region: no-drag !important}
+.flags:hover { -webkit-transform: scale(1.1);cursor: pointer; cursor: hand;}
+
+.lvlSel{
+  float:left !important;
+}
+
+.e{
+color:rgb(55,114,121);
+}
+
+.b{
+  color:#c24699;
+}
+.c{
+  color:#ec9b00;
+}
+.d{
+  color:#00909d;
+}
+
+.hist{
+  opacity:.1 !important;
+  position:absolute;
+  left:20vw;
+  width:800px;
+}
+
+.inlineSize{
+width:22px !important;
+vertical-align:middle;
+}
+
+.float{
+  float:right !important;
+}
+
+.show{
+  padding-left:20px !important;
+}
+
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+   from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes bigpulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.3, 1.3, 1.3);
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bigpulse {
+   from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.3, 1.3, 1.3);
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.modal-wrapper {
+    height:80% !important;
+  overflow-y:scroll !important;
+  border:1px solid white;
+  width:60% !important;
+  position:absolute !important;
+  margin:auto !important;
+  left:0 !important;
+  right:0 !important;
+  bottom:0 !important;
+  top:0 !important;
+    left: calc(50% - (600px/2));
+    top: calc(50% - (500px/2));
+    position: absolute;
+    width: 600px;
+   // height: 500px !important;
+}
+
+.bigpulse {
+  -webkit-animation-name: bigpulse;
+  animation-name: bigpulse;
+}
+
+.animquick {
+  -webkit-animation-duration: 200ms !important;
+  animation-duration: 200ms !important;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated {
+  -webkit-animation-duration: 1000ms !important;
+  animation-duration: 1000ms !important;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+   .animated.infinite {
+        animation-iteration-count: infinite;
+    }
+
+.alert-input-wrapper{
+ // font-family: "Courier";
+}
+
+.alert-md .alert-input{
+	font-size:22px !important;
+	color:white !important;
+ // border-color:rgba(230,62,62,1) !important;
+ // border-bottom: 1px solid #dedede !important;
+}
+
+
+
+
+.alert-message{
+  max-height:100% !important;
+  text-align:left !important;
+  color:white !important;
+  font-size:18px !important;
+  padding-bottom:2px !important;
+}
+
+.avatar{
+  //margin-top:-20px;
+  padding-right:5px;
+	width:20vw;
+	max-width:130px;
+	float:left;
+}
+
+.message{
+  padding-top:20px;
+  width: calc(100% - 140px) !important;
+  float:right !important;
+}
+
+.headerTitle{
+	float:right;
+}
+
+.alert-title{
+ //text-decoration: underline;
+  text-align:right;
+
+}
+
+.alert-button-group{
+padding:6px 0px 0px 0px !important;
+}
+
+
+.alert-button{
+padding-right:20px !important;
+font-weight:bold !important;
+//color:rgba(230,62,62,1) !important;
+//text-shadow: .1vw .1vw 5vw red;
+//font-size:23px;
+//margin-top:-20px !important;
+margin-bottom:10px !important;
+
+}
+
+
+.alert-radio-label{
+  color:white !important;
+}
+
+
+.alert-head{
+padding:10px 10px 10px 10px !important;
+}
+
+.alert-md .alert-wrapper{
+  border: 2px solid gray;
+  //max-width:90% !important;
+  max-width:700px !important;
+  width:65vw !important;
+  color:white;
+  background:rgb(39,40,34);
+  //src: url("assets/mm.ttf");
+}
+
+
+@font-face {
+
+  font-family: "Raleway";
+  src: url("../assets/raleway.ttf");
+
+}
+
+
+@font-face {
+
+  font-family: "RalewayMod";
+  src: url("../assets/ralewaySPACED.ttf");
+
+}
+
+
+
+
+ion-app.md{
+	font-family: 'Raleway', sans-serif;
+	font-weight:300;
+
+}

@@ -1,0 +1,21 @@
+<div style="height:100%;padding:5vh" class="dark3">
+<div style="font-size:4vh;text-align:right">
+Create Username</div>
+<br>
+<img class='userimg' (click)='cycleAvatar()' [src]="'assets/imgs/'+avatarNameList[avatarIndex]+'.png'">
+
+<div style="margin-top:10px;font-size:1.3vw">By participating in the online content of the game, you agree to be respectful and kind to others, including not using profanity or being uncivil. Comments and content must be relevant to regular expressions and the game itself. Moderators reseve the right to remove your online access for any reason. <i>Toggle your avatar by clicking on the picture to the left.</i></div>
+<div style="margin-top:20px;">
+<ion-input autofocus [(ngModel)]="username" placeholder="i.e. ccj242" style="border-bottom:1px white solid;padding:0 !important;font-size:3vh;margin-top:10px"></ion-input>
+<div style="float:left;padding-left:2vw;color:red;font-size:2vh">{{error}}</div><div style="float:right;opacity:.5;font-size:2vh">Your Username</div>
+</div>
+<div style="position:absolute;bottom:1vh;right:5vw;font-size:3vh !important">
+
+<button (click)="press(true)" ion-button="alert-button" class="alertButton">Create</button>
+
+<button (click)="press(false)" class="alertButton" ion-button="alert-button">Cancel</button>
+</div>
+
+
+
+</div>

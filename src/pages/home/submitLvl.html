@@ -1,0 +1,63 @@
+<div style="height:100%;padding:5vh" class="dark3">
+<div style="font-size:4vh;text-align:right">
+Submit Level</div>
+<ion-input [(ngModel)]="name" placeholder="Your Puntastic Level Name" style="border-bottom:1px white solid;padding:0 !important;font-size:3vh;margin-top:10px"></ion-input><div style="float:left;padding-left:2vw;color:red;font-size:2vh">{{error[0]}}</div><div style="float:right;opacity:.5">level name</div>
+<ion-input readonly [ngModel]="'@'+usr" style="border-bottom:1px white solid;padding:0 !important;font-size:3vh"></ion-input><div style="float:right;opacity:.5">username</div>
+
+
+<ion-input [(ngModel)]="hint" placeholder="a hint for those struggling" style="border-bottom:1px white solid;padding:0 !important;font-size:3vh"></ion-input><div style="float:left;padding-left:2vw;color:red;font-size:2vh">{{error[1]}}</div><div style="float:right;opacity:.5">level hint</div>
+
+<div style="border-bottom:1px white solid;padding:0 !important;margin-top:35px">
+  <!--    
+ <select>
+          <ion-option value="4">Expert</ion-option>
+          <ion-option value="3">Hard</ion-option>
+          <ion-option value="2">Medium</ion-option>
+          <ion-option value="1">Easy</ion-option>
+
+        </select>
+        -->
+ <select style="padding-left:10px;font-size:3vh" name="prompts" id="prompts">
+  <option value="0">{{prompts[0]}}</option>
+  <option value="1">{{prompts[1]}}</option>
+  <option value="2">{{prompts[2]}}</option>
+  <option [value]="3">{{prompts[3]}}</option>
+  <option [value]="4">{{prompts[4]}}</option>
+  </select>
+
+    </div>
+<div style="float:right;opacity:.5">introduction</div>
+
+<div style="border-bottom:1px white solid;padding:0 !important;margin-top:35px">
+	<!--    
+ <select>
+          <ion-option value="4">Expert</ion-option>
+          <ion-option value="3">Hard</ion-option>
+          <ion-option value="2">Medium</ion-option>
+          <ion-option value="1">Easy</ion-option>
+
+        </select>
+        -->
+ <select style="padding-left:10px;font-size:3vh" name="diff" id="diff">
+ 	<option value="1">Easy</option>
+	<option selected="selected" value="2">Medium</option>
+	<option value="3">Hard</option>
+	<option value="4">Expert</option>
+  </select>
+
+    </div>
+<div style="float:right;opacity:.5">difficulty</div>
+
+<div style="margin-top:30px;margin-bottom:20px;padding:10px;font-size:2vh">
+<ion-checkbox [(ngModel)]="verify" style="float:left;padding-right:5px;"></ion-checkbox>
+<div style="margin-left:20px">
+ I verify that I own the rights to the text used in my level or that it comes from a public domain source and that its content is appropriate for the community.
+</div>
+<div style="float:left;padding-left:2vw;color:red;font-size:2vh">{{error[2]}}</div>
+</div>
+<button (click)="press(true)" ion-button="alert-button" class="alertButton">Upload</button>
+
+<button (click)="press(false)" class="alertButton" ion-button="alert-button">Cancel</button>
+
+
+</div>

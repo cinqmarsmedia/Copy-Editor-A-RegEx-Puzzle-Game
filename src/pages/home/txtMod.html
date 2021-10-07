@@ -1,0 +1,21 @@
+<div style="height:100%" class="dark3">
+	<span style="position:absolute;right:5vh;top:2vh;opacity:.5">{{(type=="Input"?"input":"objective")}}</span>
+<textarea id="txt" [ngStyle]="{'font-size':3*fontScale+'vh'}" [(ngModel)]="text" class="modArea"></textarea>
+
+<div *ngIf="type!=='Input'" style="position:absolute;bottom:1vh;left:4vh" >
+<button (click)="applyOutput()" class="alertButton2" ion-button="alert-button">Apply Output</button>
+</div>
+
+<div *ngIf="type=='Input'" style="position:absolute;bottom:1vh;left:4vh" >
+<button (click)="switchOutIn()" class="alertButton2" ion-button="alert-button">Switch Goal/Input</button>
+</div>
+
+<div style="position:absolute;right:2vh;bottom:1vh">
+
+
+<button (click)="pressed(true)" ion-button="alert-button" class="alertButton">Save</button>
+
+<button (click)="pressed(false)" class="alertButton" ion-button="alert-button">Cancel</button>
+
+</div>
+</div>

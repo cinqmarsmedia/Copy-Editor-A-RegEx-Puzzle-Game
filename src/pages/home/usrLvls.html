@@ -1,0 +1,140 @@
+<div style="height:100%;padding:2vh" class="dark4">
+<div style="font-size:4vh;text-align:right">User Levels</div>
+<div id="curated" [hidden]="searchRez!==0">
+<div style="font-size:3vh">Featured Puzzle</div><hr style="background:white">
+<div style="cursor:pointer" *ngIf="featured" (click)="openUsrLvl(featured)">
+<b>{{featured.promptName}}</b> <ion-icon
+        *ngIf="featured.won"
+        style="
+          margin-left: 5px;
+          font-size: 19px;
+          color: #00b300;
+          opacity: 0.7;
+        "
+        name="md-checkmark"
+      ></ion-icon>
+
+
+<div style="display:inline-block;position:absolute;vertical-align:center;left:38vw"><img style="width:3.6vh;;margin-right:1vw" class='avatar' [src]='"assets/imgs/"+featured.userAvatar+".png"'>{{featured.username}}</div>
+</div><span *ngIf="!featured">COMING SOON!</span>
+<br><br>
+<div style="font-size:3vh">Puzzle of the Day</div>
+<hr style="background:white">
+<!--<div style="font-size:3vh">Level of the Day</div>-->
+<div style="cursor:pointer" (click)="openUsrLvl(puzzleOfDay)">
+<b>{{puzzleOfDay.promptName}}</b> <ion-icon
+        *ngIf="puzzleOfDay.won"
+        style="
+          margin-left: 5px;
+          font-size: 19px;
+          color: #00b300;
+          opacity: 0.7;
+        "
+        name="md-checkmark"
+      ></ion-icon>
+
+
+<div style="display:inline-block;position:absolute;vertical-align:center;left:38vw"><img style="width:3.6vh;;margin-right:1vw" class='avatar' [src]='"assets/imgs/"+puzzleOfDay.userAvatar+".png"'>{{puzzleOfDay.username}}</div>
+</div>
+<br><br></div>
+<div [hidden]="searchRez==2" style="font-size:3vh;margin-bottom:-15px">
+	Search <b>Level ID</b>:<ion-input [(ngModel)]="searchID"
+          (ngModelChange)="searchIDChange($event)" style="margin-left:20px;display:inline-block;width:50%" placeholder="i.e. F30B9"></ion-input></div>
+
+	<div [hidden]="searchRez==1" style="font-size:3vh">
+	Search by <b>User</b>:<ion-input [(ngModel)]="searchUsr"
+          (ngModelChange)="searchUsrChange($event)" style="margin-left:24px;display:inline-block;width:50%" placeholder="i.e. regex4life"></ion-input></div>
+
+<div id="searchResults" [hidden]="searchRez==0">
+	<hr style="background:white">
+
+<!---->
+<div style="overflow:scroll;height:30vh;position:relative">
+   <div
+      *ngFor="let lvl of rez"
+      (click)="openUsrLvl(lvl)"
+      style="cursor:pointer;padding-bottom:.5vh;font-size:3.2vh"
+    >
+<b>{{lvl.promptName}}</b> <ion-icon
+        *ngIf="lvl.won"
+        style="
+          margin-left: 5px;
+          font-size: 19px;
+          color: #00b300;
+          opacity: 0.7;
+        "
+        name="md-checkmark"
+      ></ion-icon>
+
+
+<div style="display:inline-block;position:absolute;vertical-align:center;left:38vw"><img style="width:3.6vh;;margin-right:1vw" class='avatar' [src]='"assets/imgs/"+lvl.userAvatar+".png"'>{{lvl.username}}</div><!--{{lvl.id}}-->
+
+<!--
+<div style="display:inline-block;position:absolute;right:2vw;vertical-align:center">
+
+  <ion-icon style="color:#ffd74a;vertical-align:center;font-size:2.2vh;padding-right:2px" name="md-star"></ion-icon>{{lvl.rating}}
+
+
+</div>
+-->
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<span *ngIf="rez.length==0">No Results Found</span>
+</div>
+
+
+
+<div [hidden]="searchRez!==0" style="font-size:3vh;padding-top:30px">Browse by <b>Difficulty</b> <select [(ngModel)]="selDiff" style="padding-left:30px;font-size:3vh;width:30%;display:inline-block" name="diff" id="diff">
+  <option selected="selected" value="0">All</option>
+ 	<option value="1">Easy</option>
+	<option value="2">Medium</option>
+	<option value="3">Hard</option>
+	<option value="4">Expert</option>
+  </select><hr style="background:white">
+  <div *ngIf="difficulty[selDiff].length==0">No Results Found</div>
+
+
+<div style="overflow:scroll;height:calc(52vh - 16vw);position:relative">
+   <div
+      *ngFor="let lvl of difficulty[selDiff]"
+      (click)="openUsrLvl(lvl)"
+      style="cursor:pointer;padding-bottom:.5vh;font-size:2.8vh"
+    >
+<b>{{lvl.promptName}}</b> <ion-icon
+        *ngIf="lvl.won"
+        style="
+          margin-left: 5px;
+          font-size: 19px;
+          color: #00b300;
+          opacity: 0.7;
+        "
+        name="md-checkmark"
+      ></ion-icon>
+
+
+<div style="display:inline-block;position:absolute;vertical-align:center;left:38vw"><img style="width:3.4vh;;margin-right:1vw" class='avatar' [src]='"assets/imgs/"+lvl.userAvatar+".png"'>{{lvl.username}}</div><!--{{lvl.id}}-->
+
+<!--
+<div style="display:inline-block;position:absolute;right:2vw;vertical-align:center">
+
+  <ion-icon style="color:#ffd74a;vertical-align:center;font-size:2.2vh" name="md-star"></ion-icon>{{lvl.rating}}
+
+
+
+
+</div>
+-->
+
+</div>
+</div>
+</div>
+

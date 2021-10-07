@@ -1,0 +1,30 @@
+<div style="height:100%">
+
+<div style="z-index:99;position:absolute;right:5vh;color:white;font-size:2.7vh;padding-top:1.4vh"><ion-icon style="color:#ffd74a" name="md-star"></ion-icon><span style="font-size:4vh;padding-left:5px">{{yourStars}}</span>/{{lvlList.length * 3}}
+</div>
+<div style="z-index:99;position:absolute;left:2vh;color:white;font-size:1.5vh;padding-top:4vh"><span style="padding-left:5px;opacity:.5">Unearned stars will blink when you have learned concepts necessary to get them</span>
+</div>
+<div style="background:#272822;z-index:50;border-bottom:1px solid white;height:7vh;width:100%;position:absolute;margin-bottom:3vh">
+  <!--<hr style="z-index:999;top:6vh;position:absolute;right:0;color:white;height:1px;background:white;width:98%">-->
+</div>
+<ion-list id="lvlselele" style="overflow-y: scroll; height:100%;background:rgb(39,40,34);padding-top:7vh;border-top:1px solid white">
+  <button ion-item (click)="selLevel(i)" *ngFor="let lvl of lvlList;let i=index" class="itm" [ngClass]="{'sel':i+1==currLvl,'halfopac': reqStars[i]>yourStars && !devMode}">
+           {{i+1}}. {{lvl.name}}
+
+            <!--
+             <ion-icon [hidden]="!starChars[lvl.id] || !best[lvl.id] || best[lvl.id].chars>starChars[lvl.id][1]" style="color:#ffd74a" name="md-star"></ion-icon>
+         -->
+            <ion-icon
+              name="ios-arrow-forward"
+              style="float: right; opacity: 0.8"
+            ></ion-icon>
+
+            <div *ngIf="yourStars>=reqStars[i]" style="float:right;padding-right:40px"><ion-icon [ngClass]="{'halfopac':!best[lvl.id] || !starChars[lvl.id] || best[lvl.id].chars>starChars[lvl.id][0],'animated bigpulse infinite':best[lvl.id] && best[lvl.id].chars>starChars[lvl.id][0] && best[starChars[lvl.id][2]]}" style="color:#ffd74a;margin-right:4px" name="md-star"></ion-icon><ion-icon [ngClass]="{'halfopac':!best[lvl.id] || !starChars[lvl.id] || best[lvl.id].rules>starChars[lvl.id][1],'animated bigpulse infinite':best[lvl.id] && best[lvl.id].rules>starChars[lvl.id][1] && best[starChars[lvl.id][2]]}" style="color:#ffd74a;margin-right:4px" name="md-star"></ion-icon><ion-icon [ngClass]="{'halfopac':!best[lvl.id]}" style="color:#ffd74a" name="md-star"></ion-icon>            
+            </div>
+
+            <div *ngIf="!best[lvl.id] && yourStars<reqStars[i]" style="float:right;padding-right:40px"> {{reqStars[i]}}
+            <ion-icon style="color:#ffd74a;font-size:1.5vh" name="md-star"></ion-icon></div>
+ </button>       
+</ion-list>
+
+</div>

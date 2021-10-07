@@ -1,0 +1,32 @@
+<div *ngIf="flagDict" style="height:100%;padding:5vh" class="dark3">
+<div style="font-size:4vh;text-align:right">
+RegEx Flags</div>
+
+<div style="float:right">
+Flags are options that alter the expression
+</div><br><br>
+<!--
+<ion-list>
+  <ion-item *ngFor="let flag of allowed">
+    <ion-label>{{flag}}</ion-label>
+    <ion-checkbox slot="end" value="pepperoni" checked></ion-checkbox>
+  </ion-item></ion-list>
+-->
+<div *ngIf="allowed">
+<div *ngFor="let flg of allFlags" [ngClass]="{'unavailable':allowed.indexOf(flg)<0}" style="font-size:3vh">
+	  <ion-checkbox [(ngModel)]="state[flg]" color="light"></ion-checkbox><div style="display:inline-block"> <span style="font-size:4vh;padding-left:5px"><b> {{flg}}</b></span>&nbsp;&nbsp;<span style="opacity:.7"><i>{{flagDict[flg].desc}}</i></span></div><div>{{flagDict[flg].explain}}</div>
+</div>
+<div style="padding-top:5vh">
+Flags can be unlocked for a level once all three stars have been attained. For a detailed explanation of flags, click <span style="cursor:pointer" (click)="flagInfo()"><a>here</a></span>.
+</div>
+</div>
+
+<div style="position:absolute;right:2vh;bottom:1vh">
+
+
+<button (click)="pressed(true)" ion-button="alert-button" class="alertButton">Save</button>
+
+<button (click)="pressed(false)" class="alertButton" ion-button="alert-button">Cancel</button>
+
+</div>
+</div>
