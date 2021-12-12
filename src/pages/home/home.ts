@@ -525,7 +525,7 @@ export class txtMod {
 // modal
 @Component({
   selector: "selectflags",
-  templateUrl: "selectflags.html",
+  templateUrl: "selectFlags.html",
 })
 export class selectflags {
 flags:any
