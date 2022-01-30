@@ -6,7 +6,7 @@ A puzzle game by the educational non-profit [Cinq-Mars Media](https://cinqmarsme
 
 The game uses the Ionic Framework, Angular and Electron as its foundation. It was built using Node version 10, other versions have not been tested but should work in theory. 
 
-1) Install Node.js if not already on system.
+1) Install Node.js if not already on system, version 10.15 is recommended. You can easily change node versions using [nvm](https://github.com/nvm-sh/nvm)
 2) Download the codebase and **cd** into the root directory
 3) run **npm install** to download dependencies
 4) run **npm rebuild node-sass** (sometimes necessary before npm start will work, especially on Windows)
