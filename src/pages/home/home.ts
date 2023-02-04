@@ -2003,7 +2003,7 @@ if (lvl.id == "ascii") {
       event.preventDefault();
       this.alertMessage(
         "Ned",
-        'Parentheses <b><span class="c">( )</span></b> are special commands you haven\'t unlocked yet. To reference a LITERAL parentheses you must add a <b>\\</b> behind it.',
+        'Parentheses <b><span class="c">( )</span></b> are special commands you haven\'t unlocked yet. To reference a LITERAL parentheses you must add a <b>\\</b> before it.',
         "Helpful Tip",
         true
       );
@@ -2037,7 +2037,7 @@ if (lvl.id == "ascii") {
       event.preventDefault();
       this.alertMessage(
         "Ned",
-        "We have not gone over this RegEx command yet and it isn't necessary to complete your current assignment. Keep in mind that you'll have to put a \"\\\" character behind it to make it <b>literal</b>",
+        "We have not gone over this RegEx command yet and it isn't necessary to complete your current assignment. Keep in mind that you'll have to put a \"\\\" character before it to make it <b>literal</b>",
         "Helpful Tip",
         true
       );
