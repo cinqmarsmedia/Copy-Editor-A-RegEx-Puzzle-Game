@@ -7,6 +7,9 @@
   "main": "main.js",
   "scripts": {
     "start": "ionic-app-scripts serve",
+    "build:www": "ionic-app-scripts build",
+    "electron": "electron .",
+    "dev": "npm run build:www && npm run electron",
     "clean": "ionic-app-scripts clean",
     "build": "ionic build --aot false --environment prod --output-hashing all --sourcemaps false --extract-css true --named-chunks false --build-optimizer true --minifyjs=true --minifycss=true --optimizejs=true",
     "lint": "ionic-app-scripts lint",
@@ -89,7 +92,8 @@
     "@angular/compiler-cli": "5.2.11",
     "@ionic/app-scripts": "3.2.3",
     "@types/node": "^14.14.25",
-    "electron": "^13.2.3",
+    "core-js": "^3.8.3",
+    "electron": "^25.9.8",
     "electron-builder": "^22.11.7",
     "electron-notarize": "latest",
     "typescript": "3.5.1"
