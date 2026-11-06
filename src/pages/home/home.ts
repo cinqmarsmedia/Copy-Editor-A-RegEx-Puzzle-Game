@@ -1683,6 +1683,10 @@ if (allowed){
 
 if (!allowed){
  this.shakeInput(document.activeElement.id); 
+ // the original only shook the box and let the paste through, which is how
+ // banned characters could be pasted into a solution
+ event.preventDefault();
+ return false;
 }
 
 return allowed;
