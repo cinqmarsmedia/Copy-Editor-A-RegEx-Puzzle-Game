@@ -85,6 +85,29 @@ z-index:9999 !important
   max-width:21vw;
 }
 
+.lbSummary {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5vw 0 3vw;
+  margin-top: -0.5vh;
+  font-size: 1.9vh;
+  line-height: 2.6vh;
+  color: #ddd;
+}
+
+.lbSummary .lbBest b {
+  color: #6fcf97;
+}
+
+.lbSummary .lbYou b {
+  color: #ec9b00;
+}
+
+.lbSummary .lbDim {
+  opacity: 0.6;
+  font-size: 1.5vh;
+}
+
 
 .horizExpandedCorner{
   width:2% !important;
