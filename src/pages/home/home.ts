@@ -3078,6 +3078,31 @@ ReplaceColorizer.colorizeAll();
       id = lvlDB[this.level].id;
     }
 
+    // the UI enforces the level's limits (banned characters, max find/replace
+    // length, max rules) only while typing, and paste/drag/IME slip through;
+    // never record or upload a solution that breaks them
+    var banned = this.gamestate.bannedChars || [];
+    var maxFind = this.gamestate.maxCharsFind || 999;
+    var maxRep = this.gamestate.maxCharsReplace || 999;
+    var maxRules = this.gamestate.maxRules || 999;
+    var violation = "";
+    if (
+      banned.length &&
+      this.rules.some((rule) =>
+        (rule.find + rule.replace).split("").some((c) => banned.indexOf(c) > -1)
+      )
+    ) {
+      violation = "uses characters that are not allowed on this level (" + banned.join(" ") + ")";
+    } else if (this.rules.some((rule) => rule.find.length > maxFind || rule.replace.length > maxRep)) {
+      violation = "has a rule longer than this level allows (find " + maxFind + " chars, replace " + maxRep + " chars)";
+    } else if (this.rules.length > maxRules) {
+      violation = "uses more than " + maxRules + " rules";
+    }
+    if (violation) {
+      this.dispMessage("Not Allowed", "This solution " + violation + ", so it can't be submitted.");
+      return;
+    }
+
     if (typeof this.bestScores[id] == "undefined") {
       this.bestScores[id] = {
         rules: numRules,
