@@ -3002,6 +3002,16 @@ if (!highlightActive){
       rules[0] += "</div>";
       rules[1] += "</div>";
 
+      // when the two saved solutions differ, show each one's secondary stat
+      var ruleSec = "";
+      var charSec = "";
+      if (this.bestScores[id].ruleSolution !== this.bestScores[id].charSolution) {
+        var rs = this.solutionStats(this.bestScores[id].ruleSolution);
+        var cs = this.solutionStats(this.bestScores[id].charSolution);
+        ruleSec = ' <span class="small">(' + rs.chars + " chars)</span>";
+        charSec = ' <span class="small">(' + cs.rules + " rule" + (cs.rules == 1 ? "" : "s") + ")</span>";
+      }
+
       var alert = this.alertCtrl.create({
         title: "Your Best Solutions",
         subTitle:
@@ -3013,12 +3023,14 @@ if (!highlightActive){
         message:
           "<u>Fewest Rules</u>: <b>" +
           this.bestScores[id].rules +
+          ruleSec +
           rule +
           "</b><br>" +
           rules[1] +
           "<br><br>" +
           "<u>Fewest Chars</u>: <b>" +
           this.bestScores[id].chars +
+          charSec +
           char +
           "</b><br>" +
           rules[0],
