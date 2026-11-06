@@ -3130,6 +3130,10 @@ var charsBetter=this.bestScores[id].chars > totalChars
       }
     }
 
+    // persist right away; otherwise the new best only reaches storage on the
+    // next evaluateRegEx (next keystroke) and is lost if the app quits first
+    this.setData();
+
     var messag =
       attaboy[Math.floor(attaboy.length * Math.random())] +
       " You used <b>" +
