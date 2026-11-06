@@ -14,7 +14,8 @@
     "build": "ionic build --aot false --environment prod --output-hashing all --sourcemaps false --extract-css true --named-chunks false --build-optimizer true --minifyjs=true --minifycss=true --optimizejs=true",
     "lint": "ionic-app-scripts lint",
     "build-mac": "env CSC_LINK='./direct.p12' npx electron-builder -m",
-    "build-wl": "nvm exec 16 npx electron-builder -wl"
+    "build-wl": "nvm exec 16 npx electron-builder -wl",
+    "electron:test": "electron . --no-upload"
   },
   "build": {
     "files": [

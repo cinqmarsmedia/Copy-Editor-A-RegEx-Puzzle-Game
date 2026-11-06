@@ -24,6 +24,8 @@ function createWindow() {
       contextIsolation: true,
       enableRemoteModule: false,
       preload: path.join(__dirname, "preload.js"),
+      // `--no-upload` on the command line disables leaderboard uploads (dev/testing)
+      additionalArguments: process.argv.includes("--no-upload") ? ["--no-upload"] : [],
     },
   });
   win.setFullScreenable(true);

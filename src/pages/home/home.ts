@@ -3204,6 +3204,11 @@ this.globalModal = this.modalCtrl.create(lvlWonDialogue, {
   }
 
 uploadBest(rules,chars,id){
+  // launched with --no-upload (dev/testing): never touch the real leaderboard
+  if (window["electron"] && window["electron"].noUpload) {
+    console.log("upload skipped (--no-upload):", id, rules, chars);
+    return;
+  }
 this.db.list("/scores/").push([id,rules,chars]);
 }
 
