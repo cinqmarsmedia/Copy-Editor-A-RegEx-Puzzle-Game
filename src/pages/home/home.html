@@ -1,3 +1,13 @@
+<div [hidden]="!discordOpen" id="discordFrame">
+  <div class="discordCtrls">
+
+<ion-icon style="cursor:move;font-size:23px" id="pipFrameheader" name="md-move"></ion-icon>
+<ion-icon class="hov" style="cursor:pointer;font-size:23px;margin-left:3px" (click)="discordOpen=false" name="md-close-circle"></ion-icon>
+</div>
+<iframe *ngIf="discordOpen" src="https://e.widgetbot.io/channels/793917160644018188/797657973149270067" height="600" width="600"></iframe>
+</div>
+
+
 <div *ngIf="slideshowstate && slideshowstate.length>0">
 <div (click)="slideShowButton(false)" style="z-index:999;position:absolute;top:0;left:0;height:100vh;width:45%;cursor:pointer"></div>
 <div (click)="slideShowButton(true)" style="z-index:999;position:absolute;top:0;right:0;height:100vh;width:55%;cursor:pointer"></div>
@@ -112,7 +122,8 @@
     </div>
   </div>
 
-  <div style="width: 30%; height: 35.2%; position: absolute; bottom: 0; right: 0" [ngClass]="{'expanded':expandedView}">
+  <div style="width: 30%; height: 35.2%; position: absolute; bottom: 0; right: 0" [ngClass]="{'expanded':expandedView,'horizExpandedCorner':horizExpandedView}">
+    <div (click)="horizExpandedView=false" *ngIf="horizExpandedView" style="cursor:pointer;width:100%;height:100%;position:absolute;background:rgba(47,74,74,.7);z-index:9"></div>
     <div
       style="
         width: 100%;
@@ -137,7 +148,7 @@
           [hidden]="creationMode || userLevelMode"
           value="chat"
         >
-          Chat
+          <span style="margin-left:-10px">Chat</span><img style="position:absolute;width:40px;opacity:.3;z-index:0;margin-left:5px" src="assets/imgs/slack.png">
         </ion-segment-button>
         <ion-segment-button (click)="scrollUp()"
           [ngClass]="{'light-menu-header':!nightmode}"
@@ -153,6 +164,7 @@
           (click)="noPulse()"
         >
        RegEx
+
         </ion-segment-button>
 
         <ion-segment-button (click)="scrollUp()"
@@ -478,9 +490,9 @@
         ></ion-icon>
 -->
 <!---->
-          <div [ngClass]="{'whte':nightmode,'blck':!nightmode}" style="font-size:2.2vh;z-index:9999 !important;position:absolute;right:1vw;margin-top:-1vh"><ion-icon (click)="toggleFullScreen()" style="opacity:.3" class="hov" name="md-expand"></ion-icon><ion-icon (click)="quitGame()" class="hov" style="margin-left:1vw;opacity:.3" name="md-exit"></ion-icon></div>
+          <div [hidden]="horizExpandedView" [ngClass]="{'whte':nightmode,'blck':!nightmode}" style="font-size:2.2vh;z-index:9999 !important;position:absolute;right:1vw;margin-top:-1vh"><ion-icon (click)="toggleFullScreen()" style="opacity:.3" class="hov" name="md-expand"></ion-icon><ion-icon (click)="quitGame()" class="hov" style="margin-left:1vw;opacity:.3" name="md-exit"></ion-icon></div>
 
-<div [ngClass]="{'whte':nightmode,'blck':!nightmode}" style="font-size:2.2vh;z-index:10 !important;position:absolute;left:1vw;margin-top:-1vh">
+<div [hidden]="horizExpandedView" [ngClass]="{'whte':nightmode,'blck':!nightmode}" style="font-size:2.2vh;z-index:10 !important;position:absolute;left:1vw;margin-top:-1vh">
 <ion-icon (click)="toggleMute()" style="opacity:.3;float:left" class="hov" [name]="mute?'md-volume-off':'md-volume-up'"></ion-icon>
 <ion-icon (click)="slideshowMenu()" style="opacity:.3;float:left;padding-left:1vw" class="hov" name="md-film"></ion-icon>
 </div>
@@ -562,7 +574,7 @@
             ></ion-icon>
             <div *ngIf="mystars<unlockThresh.create" style="float:right"> {{mystars}}/{{unlockThresh.create}} <ion-icon style="color:#ffd74a;font-size:1.5vh" name="md-star"></ion-icon></div>
           </button>
-
+<!--
            <button
             class="main-menu-button"
             style="background: RGBA(0, 0, 0, 0) !important"
@@ -570,17 +582,42 @@
             [hidden]="creationMode"
             ion-item
             (click)="procedural()"
-          ><!--mystars<unlockThresh.procedural-->
-            Procedural Mode <span style="font-size:1.5vh"><i>coming soon<!--beta--></i></span><!--mystars>=unlockThresh.procedural-->
+          >
+            Procedural Mode <span style="font-size:1.5vh"><i>coming soon</i></span>
             <ion-icon *ngIf="true"
               name="ios-flask"
               style="float: right; opacity: 0.8;font-size:2.5vh"
             ></ion-icon>
-<div *ngIf="false" style="float:right"> <!--mystars<unlockThresh.procedural-->{{mystars}}/{{unlockThresh.procedural}} <ion-icon style="color:#ffd74a;font-size:1.5vh" name="md-star"></ion-icon></div>
+<div *ngIf="false" style="float:right"> {{mystars}}/{{unlockThresh.procedural}} <ion-icon style="color:#ffd74a;font-size:1.5vh" name="md-star"></ion-icon></div>
 
 
           </button>
-
+-->
+        <button
+            
+            class="main-menu-button"
+            style="background: RGBA(0, 0, 0, 0) !important;margin-right:0 !important;"
+            [ngStyle]="{'opacity':mystars<unlockThresh.discord?'.5':'1'}"
+            ion-item
+            (click)="openDiscord()"
+          >
+           Discord
+            <img *ngIf="mystars>=unlockThresh.discord" class="discord" src="assets/imgs/5968898.png">
+            <div *ngIf="mystars<unlockThresh.discord" style="float:right"> {{mystars}}/{{unlockThresh.discord}} <ion-icon style="color:#ffd74a;font-size:1.5vh" name="md-star"></ion-icon></div>
+          </button>
+            <button
+          *ngIf="tipsOff"
+            class="main-menu-button"
+            style="background: RGBA(0, 0, 0, 0) !important"
+            ion-item
+            (click)="tipsOff=false"
+          >
+            Re-Enable Tips
+            <ion-icon
+              name="md-bulb"
+              style="float: right; opacity: 0.8;font-size:2.5vh;"
+            ></ion-icon>
+          </button>
           <button
             class="main-menu-button"
             style="background: RGBA(0, 0, 0, 0) !important"
@@ -593,6 +630,8 @@
               style="float: right; opacity: 0.8;font-size:2.5vh;"
             ></ion-icon>
           </button>
+
+        
 
           <button
             class="main-menu-button"
@@ -686,13 +725,17 @@
     </div>
   </div>
 
-<ion-icon (click)="expandedView=!expandedView" class="grow2" [ngStyle]="{'bottom':expandedView?'48%':'33%'}" style="position:absolute;right:29%;bottom:33%;opacity:.3;font-size:4vh;z-index:10;color:white" [name]="expandedView?'ios-arrow-dropdown-circle':'ios-arrow-dropup-circle'"></ion-icon>
+  <!-- -->
+
+  <ion-icon (click)="horizExpandedView=!horizExpandedView" class="grow2" [ngStyle]="{'right':horizExpandedView?'.5%':'29%'}" style="position:absolute;right:29%;bottom:1%;opacity:.3;font-size:4vh;z-index:10;color:white" [name]="horizExpandedView?'ios-arrow-dropleft-circle':'ios-arrow-dropright-circle'"></ion-icon>
+
+<ion-icon (click)="expandedView=!expandedView" class="grow2" [ngStyle]="{'bottom':expandedView?'48%':'33%','right':horizExpandedView?'.5%':'29%'}" style="position:absolute;right:29%;bottom:33%;opacity:.3;font-size:4vh;z-index:10;color:white" [name]="expandedView?'ios-arrow-dropdown-circle':'ios-arrow-dropup-circle'"></ion-icon>
 
 <div *ngIf="demoMode" style="position:absolute;bottom:1vh;left:1vw;color:#ec9b00;font-size:2vw"><b>Demo Version</b></div>
 
 
   <div
-    [ngClass]="{'light':!nightmode,'expanded':expandedView}"
+    [ngClass]="{'light':!nightmode,'expanded':expandedView,'horizExpandedMain':horizExpandedView}"
     class="dark"
     style="
       width: 70%;
@@ -742,7 +785,8 @@
   contenteditable="true" spellcheck="false" [(ngModel)]="rule.find" (ngModelChange)="evaluateRegEx()"
   >{{rule.find}}</div>
 -->
-          <!--          onpaste="return false"-->
+          <!--onpaste="return false"-->
+<img [hidden]="!rule.find" class="svgRegex" (click)="openXPR(rule.find)" src="assets/imgs/flow-chart2.png">
           <div
             [id]="2*i+1"
             class="regex regexinput inputs animquick"
@@ -751,7 +795,7 @@
             spellcheck="false"
             [(ngModel)]="rule.find"
             (input)="onInput($event,i)"
-            [ngClass]="{'pulse':shake && shake[2*i+1],'nite':nightmode,'findGrown':inputGrow==2*i+1,'findSmall':inputGrow==2*i+2,'find':inputGrow!==2*i+2 && inputGrow!==2*i+1}"
+            [ngClass]="{'hyperExtendFind':horizExpandedView && inputGrow==2*i+1,'horizExtendFind':horizExpandedView,'pulse':shake && shake[2*i+1],'nite':nightmode,'findGrown':inputGrow==2*i+1,'findSmall':inputGrow==2*i+2,'find':inputGrow!==2*i+2 && inputGrow!==2*i+1}"
           >
             <!--{{ rule.find }}-->
           </div>
@@ -762,7 +806,7 @@
 -->
           <div [ngClass]="{'animated pulse':gamestate.allowedFlags}" class="flags" style="display:inline-block" (click)="changeFlags(rule.flags,i)">/{{rule.flags}}</div>
           <span
-            style="padding-left: 2vw"
+            style="padding-left: 4vw"
             [ngClass]="{'notvisible':rule.highlit}"
             ><b>Replace</b>:
           </span>
@@ -776,7 +820,7 @@
             (paste)="pastedContent($event)"
             [(ngModel)]="rule.replace"
             (input)="onInput($event,i)"
-            [ngClass]="{'notvisible':rule.highlit,'pulse':shake && shake[2*i+2],'nite':nightmode,'rep':inputGrow!==2*i+2,'repGrown':inputGrow==2*i+2}"
+            [ngClass]="{'horizExtendRep':horizExpandedView,'notvisible':rule.highlit,'pulse':shake && shake[2*i+2],'nite':nightmode,'rep':inputGrow!==2*i+2,'repGrown':inputGrow==2*i+2}"
           >
             <!--{{rule.replace | spaces}}-->
           </div>

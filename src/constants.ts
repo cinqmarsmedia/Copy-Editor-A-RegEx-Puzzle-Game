@@ -1,4 +1,4 @@
-export const mediumIDs:any=['fa43','d485','35ce','eeb1','f941','27bc','85d2','f51f','3988','5300','2f99','300f','b832','6fc9','b116','e07a','46da','215','9aed','ce55','686d','4984','73be','9068','7b5e','d50a','e0a0','9a69','51f0','3da0','9bc6','224a','f66b','a108','c8a2','1f30','cb45','1406','bc0f','2a17','3b30','5618'];
+export const mediumIDs:any=['fa43','d485','35ce','eeb1','f941','27bc','85d2','f51f','3988','5300','2f99','300f','b832','6fc9','b116','e07a','46da','215','9aed','ce55','686d','4984','73be','9068','7b5e','d50a','e0a0','9a69','51f0','3da0','9bc6','224a','f66b','a108','c8a2','1f30','cb45','1406','bc0f','2a17','3b30','5618','ae63','0a56'];
 
 
 export const newchart: any = {
@@ -25,7 +25,6 @@ export const newchart: any = {
         yAxes: [{
             ticks: {
               min: 0,
-              max: .8,
                 display: false,
             }
         }],
@@ -59,9 +58,9 @@ export const lvlDB:any={
 '10':{
 'input':`And when he XOXOerXO, with an intensification of relief and consummation that was pure peace to him, still she was XOwXOXOt. She felt herself XOaXOlf. And she knew, partly it was her own fault. She willed herself into this separateness. Now perhaps she was condemned to it. She lay still, feeling XhOXOmiX, his deep-sunk intentness, the sudden quiver of him at the XOhXOeXO, then the slow-subsiding XOtXrXO. That XOtXuXO, surely it was a little ridiculous. If you were a woman, and a part in all the business, surely that XOXOXO of the man's XO was supremely ridiculous. Surely the man was intensely ridiculous in this posture and this act...Yes, this was love, this ridiculous XOXtOXO of the XOlXO and the wilting of the poor, insignificant, XOmXOXO little XOpXOsXO. This was the divine love!!`,
 'goal':`And when he (censored), with an intensification of relief and consummation that was pure peace to him, still she was (censored). She felt herself (censored). And she knew, partly it was her own fault. She willed herself into this separateness. Now perhaps she was condemned to it. She lay still, feeling (censored), his deep-sunk intentness, the sudden quiver of him at the (censored), then the slow-subsiding (censored). That (censored), surely it was a little ridiculous. If you were a woman, and a part in all the business, surely that (censored) of the man's (censored) was supremely ridiculous. Surely the man was intensely ridiculous in this posture and this act...Yes, this was love, this ridiculous (censored) of the (censored) and the wilting of the poor, insignificant, (censored) little (censored). This was the divine love!!`,
-'prompt':[{usr:'Boss',txt:"Ok who is the smartass who replaced all the bad words with XOXOs?"},{usr:'Chad',txt:"You said to censor the DH Lawrence book!"},{usr:'Boss',txt:"Well not like that..."},{usr:'Marie',txt:"It looks like you forgot a bunch of letters inbetween, too..."},{usr:'Chad',txt:"Yeah, yeah, rub it in."},{usr:'Boss',txt:"Whoa, whoa - that's exactly the type of language we need censored here!"},{usr:'Ned', txt:"You're gonna need a new operator for this, \"<b><span class='b'>?</span></b>\": an optional match"},{usr:'Ned', txt:"Also, we're facing a surge at the moment, 4 rules at most everyone, sorry. 😘"}],
+'prompt':[{usr:'Boss',txt:"Ok who is the smartass who replaced all the bad words with XOXOs?"},{usr:'Chad',txt:"You said to censor the DH Lawrence book!"},{usr:'Boss',txt:"Well not like that..."},{usr:'Marie',txt:"It looks like you forgot a bunch of letters in-between, too..."},{usr:'Chad',txt:"Yeah, yeah, rub it in."},{usr:'Boss',txt:"Whoa, whoa - that's exactly the type of language we need censored here!"},{usr:'Ned', txt:"You're gonna need a new operator for this, \"<b><span class='b'>?</span></b>\": an optional match"},{usr:'Ned', txt:"Also, we're facing a surge at the moment, 4 rules at most everyone, sorry. 😘"}],
 'promptName':'Hugs & Kisses',
-'hint':[{name:'Ned',txt:'The optional token "<b><span class="b">?</span></b>" matches your expression whether the preceeding character is there or not. For example matching "<b>ca?</b>" and replacing with nothing will turn "<b>cancoon</b>" into "<b>noon</b>" by matching the "<b>ca</b>" as well as the lone "<b>c</b>"',header:'Helpful Tip'},{name:'Ned',txt:'Combining optional matches with other fuctions, such as the NOT match, can be a powerful tool. i.e. "<b>t<span class="b">\\S?</span>o</b> will match <b>too</b>, <b>two</b>, and <b>to</b>.',header:'Helpful Tip'}],
+'hint':[{name:'Ned',txt:'The optional token "<b><span class="b">?</span></b>" matches your expression whether the preceding character is there or not. For example matching "<b>ca?</b>" and replacing with nothing will turn "<b>cancoon</b>" into "<b>noon</b>" by matching the "<b>ca</b>" as well as the lone "<b>c</b>"',header:'Helpful Tip'},{name:'Ned',txt:'Combining optional matches with other functions, such as the NOT match, can be a powerful tool. i.e. "<b>t<span class="b">\\S?</span>o</b> will match <b>too</b>, <b>two</b>, and <b>to</b>.',header:'Helpful Tip'}],
 'maxRules':4,
 'id':'hugs'
 },
@@ -70,7 +69,7 @@ export const lvlDB:any={
 '11':{
 'input':`162Xt, 19298, 24822, 34183, 20688, 21266, 113, 24949, 36984, 14971b, 35135, 19268, 36098, 19171, 15134, 21493, 29465, 21385, 172, 32170, 36416, 20591, 31449, 28915, 37508, 28392, 25797, 39514, 19084, 16500yu, 37084, 29307, 19304, 38973, 11775, 13370, 22025, 35042, 26687, 3545, 32032, 18409, 36850, 20745, 12448vs, 12135, 2880, 3519, 15533, 20448a, 31067, 16517, 2978, 39131, 18243c, 34101, 34631, 30842, 27148, 27691, 12031, 30983, 13008, 36303, 12987, 16959b, 22094, 25382, 16568, 1862, 3390, 15149, 11633, 25281, 34044zf, 36793, 10727, 31397, 16402, 21763, 22698, 37765, 11132, 10194, 23933, 19200, 15377, 3310, 18617a, 1595, 14954, 13758, 39745, 21705, 16250p, 32631, 26123, 26867, 12015, 13739, 33033, 10743, 2757, 32222, 26657, 39329, 12105, 22403, 33138, 13480, 38038, 22454, 37657, 36876, 27163, 33531, 12816s, 36691, 3195, 15210, 27948, 18036, 30382hh, 38293, 2804, 39051, 26682, 28659cx, 2312, 19424, 28990, 31688, 32326, 23567, 12004, 12787, 24493, 10365, 27359, 14999, 37365, 23355, 25547, 11115fQ, 28930, 30741, 27394, 23890, 39063, 14336, 1021, 38459, 26015, 32237, 14355, 30302, 12320, 10475, 12350, 16470vv, 189201`,
 'goal':`162, 19298, 113, 14971, 19268, 19171, 15134, 172, 19084, 16500, 19304, 11775, 13370, 18409, 12448, 12135, 15533, 16517, 18243, 12031, 13008, 12987, 16959, 16568, 1862, 15149, 11633, 10727, 16402, 11132, 10194, 19200, 15377, 18617, 1595, 14954, 13758, 16250, 12015, 13739, 10743, 12105, 13480, 12816, 15210, 18036, 19424, 12004, 12787, 10365, 14999, 11115, 14336, 1021, 14355, 12320, 10475, 12350, 16470, 189201`,
-'prompt':[{usr:'Marie',txt:"Uh.. what are all these random numbers on my screen?"},{usr:'Boss',txt:"Nothing! Just ignore it. Don't look at it!"},{usr:'Chad',txt:"ooooh this is gonna be entertaining...."},{usr:'Marie',txt:"I can't close it... it's slowing my system down, is it an error?"},{usr:'Ned',txt:"Nothing happened on our end that I can see"},{usr:'Boss',txt:"Ok, look - I was trying to fudge my cholesterol numbers before my cardiology appointment and I must have shared it with the group on accident"},{usr:'Chad',txt:"Sounds like fudge is part of the problem"},{usr:'Marie',txt:"These can't be cholesterol numbers... They're gigantic"},{usr:'Chad',txt:"FUDGE! Get it?? 🍫😂"},{usr:'Boss',txt:"It's total + hdl and I was bad at recording it on my meter and ... just forget it, ok?"},{usr:'Chad',txt:"How are you even alive? I don't think this is humanly possible..."},{usr:'Boss',txt:"Look just - remove all numbers that don't start with a 1, that way it'll look good, ok? And get rid of any letters at the end, those were errors by the machine."},{usr:'Chad',txt:"I think we should just call and ambulance instead and take the rest of the day off."},{usr:'Ned',txt:"I know this looks intimidating, but you totally got this. Don't sweat all the numbers, just take it one step at a time and don't be shy about using a hint below, I'm here to help!"}],
+'prompt':[{usr:'Marie',txt:"Uh.. what are all these random numbers on my screen?"},{usr:'Boss',txt:"Nothing! Just ignore it. Don't look at it!"},{usr:'Chad',txt:"ooooh this is gonna be entertaining...."},{usr:'Marie',txt:"I can't close it... it's slowing my system down, is it an error?"},{usr:'Ned',txt:"Nothing happened on our end that I can see"},{usr:'Boss',txt:"Ok, look - I was trying to fudge my cholesterol numbers before my cardiology appointment and I must have shared it with the group on accident"},{usr:'Chad',txt:"Sounds like fudge is part of the problem"},{usr:'Marie',txt:"These can't be cholesterol numbers... They're gigantic"},{usr:'Chad',txt:"FUDGE! Get it?? 🍫😂"},{usr:'Boss',txt:"It's total + hdl and I was bad at recording it on my meter and ... just forget it, ok?"},{usr:'Chad',txt:"How are you even alive? I don't think this is humanly possible..."},{usr:'Boss',txt:"Look just - remove all numbers that don't start with a 1, that way it'll look good, ok? And get rid of any letters at the end, those were errors by the machine."},{usr:'Chad',txt:"I think we should just call an ambulance instead and take the rest of the day off."},{usr:'Ned',txt:"I know this looks intimidating, but you totally got this. Don't sweat all the numbers, just take it one step at a time and don't be shy about using a hint below, I'm here to help!"}],
 'promptName':'Cholesterol Catastrophe',
 'hint':[{name:'Ned',txt:'Don\'t forget that inserting or replacing necessary characters with unique characters is a simple way to make sure they avoid transformation. In a level with so many numbers, maybe a non-digit would be safest?',header:'Helpful Tip'},{name:'Ned',txt:'Combining optional matches in a string, such as <b><span class="b">\\d\\d?\\d?\\d?</span><b>, will match a variety such as <b>2355</b>, <b>183</b>, <b>7</b>, and <b>12</b>.',header:'Helpful Tip'},{name:'Ned',txt:'Optional strings work best here when it is anchored at the start, either by a specific character <b>x<span class="b">\\d?</span></b>, for example, will match x, x1, x2, x3, etc..., or a rigid function <b><span class="b">\\d\\d?</span></b>, for example, will match any one or two digit numbers, but will not match x1, c1, _1, etc...',header:'Helpful Tip'}],
 'maxRules':10,
@@ -150,7 +149,7 @@ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 {usr:'Marie',txt:"Jeez. Do we need any new commands for this one? Ned?"},
 
 ],
-'hint':[{name:'Ned',txt:'The <span class="b">^</span> command matches the beginning of the string. But depending on what you do, the beginning can change in further rules...',header:'Helpful Tip'},{name:'Marie',txt:'Once the uneeded sentences are removed, it\'s just a matter of capturing what you want and swapping it around.',header:'Helpful Tip'},{name:'Chad',txt:'By using <b><span class="b">^.+?</span>\.</b> you can capture the entire first sentence!',header:'Helpful Tip'}],
+'hint':[{name:'Ned',txt:'The <span class="b">^</span> command matches the beginning of the string. But depending on what you do, the beginning can change in further rules...',header:'Helpful Tip'},{name:'Marie',txt:'Once the unneeded sentences are removed, it\'s just a matter of capturing what you want and swapping it around.',header:'Helpful Tip'},{name:'Chad',txt:'By using <b><span class="b">^.+?</span>\.</b> you can capture the entire first sentence!',header:'Helpful Tip'}],
 'promptName':'Alpha & Omega',
 'maxCharsFind':20,
 'bannedChars':['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
@@ -259,7 +258,7 @@ xnormal@outlook.com REAL
 falca∂o@msn.com`,
 'prompt':[{usr:'Boss',txt:"Users have been submitting fake emails to our <a href='https://cinqmarsmedia.us2.list-manage.com/subscribe?u=551a0b16e3eff4f13cbac507b&id=5e54ff5bad'>newsletter</a>!"},{usr:'Marie',txt:"huh?"},{usr:'Boss',txt:"How could anyone do something so dishonest??"},{usr:'Chad',txt:"It's a sick world..."},{usr:'Boss',txt:"What are we going to do? We need them to sign up because it's awesome and wonderful and informative!"},{usr:'Marie',txt:"Well what do you want us to do?"},{usr:'Boss',txt:"Share the <a href='https://cinqmarsmedia.us2.list-manage.com/subscribe?u=551a0b16e3eff4f13cbac507b&id=5e54ff5bad'>link</a> with your friends! Tell your family! And FIX IT!!!"},{usr:'Chad',txt:"How?"},{usr:'Boss',txt:"What do you mean\"how\"? Just get the left side to match the right side"},{usr:'Marie',txt:"But some of these could be legit emails..."},{usr:'Boss',txt:"It doesn't have to be perfect."},{usr:'Ned',txt:"You'll need a new command for this: \"<b><span class='b'>\\n</span></b>\". This matches a line break. Remember also that everything in a match group <b><span class='d'>[]</span></b> is OR'd!"}],
 'promptName':'Unfordeliverable',
-'hint':[{name:'Chad',txt:'The only way I\'ve figured a way to do this is if I have one rule that matches a valid email, captures the whole thing, and replaces it with "<b><span class="c">$</span>1 REAL</b>". More rules don\'t seem to help me.',header:'Helpful Tip'},{name:'Ned',txt:'You can use parentheses to separate out logical operators even if you don\'t intend to capture. In fact, you can use parantheses inside of capture groups to do just this.',header:'Helpful Tip'},{name:'Marie',txt:'Remember, everything in a Match group is like an OR, for example, <b>t<span class="d">[abc]</span>p</b> will act kind of like <b>a<span class="b">|</span>b<span class="b">|</span>c</b>',header:'Helpful Tip'},{name:'Ned',txt:'You need to match emails from the start of the line, so try using "<b><span class="b">\\n</span></b>" to match a preceeding line break!',header:'Helpful Tip'}],
+'hint':[{name:'Chad',txt:'The only way I\'ve figured a way to do this is if I have one rule that matches a valid email, captures the whole thing, and replaces it with "<b><span class="c">$</span>1 REAL</b>". More rules don\'t seem to help me.',header:'Helpful Tip'},{name:'Ned',txt:'You can use parentheses to separate out logical operators even if you don\'t intend to capture. In fact, you can use parentheses inside of capture groups to do just this.',header:'Helpful Tip'},{name:'Marie',txt:'Remember, everything in a Match group is like an OR, for example, <b>t<span class="d">[abc]</span>p</b> will act kind of like <b>a<span class="b">|</span>b<span class="b">|</span>c</b>',header:'Helpful Tip'},{name:'Ned',txt:'You need to match emails from the start of the line, so try using "<b><span class="b">\\n</span></b>" to match a preceding line break!',header:'Helpful Tip'}],
 'maxRules':5,
 'id':'emails'
 },
@@ -282,7 +281,7 @@ falca∂o@msn.com`,
 'promptName':'.................................................',
 'bannedChars':['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
 'maxRules':5,
-'hint':[{name:'Ned',txt:'Periods can be used as wildcards. Check the REGEX tab for more info.',header:'Helpful Tip'},{name:'Ned',txt:'Use a period for every character in the sentence, then identify what letters you need to complete your objective and their placement in the string.',header:'Helpful Tip'}],
+'hint':[{name:'Ned',txt:'Periods can be used as wildcards. Check the RegExp tab for more info.',header:'Helpful Tip'},{name:'Ned',txt:'Use a period for every character in the sentence, then identify what letters you need to complete your objective and their placement in the string.',header:'Helpful Tip'}],
 'id':'noletters'
 },
 
@@ -633,14 +632,14 @@ Neither, fair maid, if either thee dislike.`,
 	
 	'prompt':[{usr:'Boss',txt:"I've gotten some complaints on the Romeo & Juliet text"},{usr:"Chad",txt:"All that 'wherefore' stuff, right? I knew that had to be wrong."},{usr:'Marie',txt:"No, it's correct. 'Wherefore' means 'why'"},{usr:"Boss",txt:"well wherefore are juliet and romeo's names mixed up?"},{usr:'Chad',txt:"Well they're talking about how names don't really matter, so it's fine, right? It's like... ironic."},{usr:"Boss",txt:"Well they do matter. Fix it."},{usr:"Chad",txt:"But wherefore though?"},{usr:"Boss",txt:"Ugh. Wherefore don't I just fire you?"}],
 	'promptName':'Wherefore Art Thou', 
-	'hint':[{name:'Marie',txt:'Try inserting a uniqe character into the middle of a word you replace, like "coxrn" so it doesn\'t match with "corn". You can always remove the character in a subsequent rule...',header:'Helpful Tip'}],
+	'hint':[{name:'Marie',txt:'Try inserting a unique character into the middle of a word you replace, like "coxrn" so it doesn\'t match with "corn". You can always remove the character in a subsequent rule...',header:'Helpful Tip'}],
 		'id':'romeo'
 	},
 
 		'16':{
 'input':'concluded. he where beginning order, the reversing backwards, follow I',
 'goal':'I follow backwards, reversing the order, beginning where he concluded.',
-'prompt':[{usr:'Boss',txt:"We need those Abraham Lincoln speeches done ASAP"},{usr:"Chad",txt:"...Why? Is there really a demand?"},{usr:'Marie',txt:"Last I checked some of it was still backwards"},{usr:"Chad",txt:"It's like one sentence, just rewrite it manually"},{usr:'Ned',txt:"The replace input has a 50 character limit"},{usr:'Chad',txt:"Man, seriously??"},{usr:"Ned",txt:"And while I'm giving out bad news, only one rule is working. We're doing maintance. Sorry"},{usr:"Chad",txt:"You're not sorry.... "}],
+'prompt':[{usr:'Boss',txt:"We need those Abraham Lincoln speeches done ASAP"},{usr:"Chad",txt:"...Why? Is there really a demand?"},{usr:'Marie',txt:"Last I checked some of it was still backwards"},{usr:"Chad",txt:"It's like one sentence, just rewrite it manually"},{usr:'Ned',txt:"The replace input has a 50 character limit"},{usr:'Chad',txt:"Man, seriously??"},{usr:"Ned",txt:"And while I'm giving out bad news, only one rule is working. We're doing maintenance. Sorry"},{usr:"Chad",txt:"You're not sorry.... "}],
 'promptName':'FWD: ssA Backwards', // nlocniL
 'maxRules':1,
 'maxCharsReplace':50,
@@ -729,7 +728,7 @@ Jimmy grinned back. (tension?) "Thank you, Peter," said he.`,
 "That will do," interposed Old Mother Nature.  "Go on, Peter, with what you know about Jimmy."  "He is good-natured," said Peter, and grinned  at Jimmy.
 
 Jimmy grinned back.  "Thank you, Peter," said he.`,
-'prompt':[{usr:'Boss',txt:"No Notes!"},{usr:"Chad",txt:"Finally! Some praise for a change! That wasn't so hard, was it?"},{usr:'Boss',txt:"No stop being lazy and get rid of the notes in the text... why are they there anyway?"},{usr:"Marie",txt:"When we used OCR to scan the book, it must have been used and had notes written in the margins..."},{usr:"Ned",txt:"Couple things for this one -> '(' is a special regex command you'll learn later. To use it LITERALLY, you'll need to put a \\ behind it i.e. \\( otherwise it won't work."},{usr:'Chad',txt:"This sounds literally terrible."},{usr:'Ned',txt:"Also, remember your questionmark? Well when used after a plus sign, it makes matching LAZY."},{usr:'Chad',txt:"That... sounds more my style"},{usr:'Marie',txt:"Is lazy good?"},{usr:'Ned',txt:"It can be. By Default, the \"<b><span class=\"b\">+</span></b>\" token will match as much as it can of the string. Adding a \"<b><span class='b'>?</span></b>\" after makes it <b>lazy</b> - meaning it will instead match the <i>least</i> number of characters it can. For example, \"<b>a<span class='b'>+</span>a\" will match the entire string \"<b>alabama</b>\" where \"<b>a<span class='b'>+?</span>a</b>\" will simply match \"<b>ala</b>\""},{usr:'Chad',txt:"...why can I only use like 15 characters in the find field?"},{usr:'Ned',txt:"Uh-oh..."}],
+'prompt':[{usr:'Boss',txt:"No Notes!"},{usr:"Chad",txt:"Finally! Some praise for a change! That wasn't so hard, was it?"},{usr:'Boss',txt:"No stop being lazy and get rid of the notes in the text... why are they there anyway?"},{usr:"Marie",txt:"When we used OCR to scan the book, it must have been used and had notes written in the margins..."},{usr:"Ned",txt:"Couple things for this one -> '(' is a special regex command you'll learn later. To use it LITERALLY, you'll need to put a \\ before it i.e. \\( otherwise it won't work."},{usr:'Chad',txt:"This sounds literally terrible."},{usr:'Ned',txt:"Also, remember your questionmark? Well when used after a plus sign, it makes matching LAZY."},{usr:'Chad',txt:"That... sounds more my style"},{usr:'Marie',txt:"Is lazy good?"},{usr:'Ned',txt:"It can be. By Default, the \"<b><span class=\"b\">+</span></b>\" token will match as much as it can of the string. Adding a \"<b><span class='b'>?</span></b>\" after makes it <b>lazy</b> - meaning it will instead match the <i>least</i> number of characters it can. For example, \"<b>a<span class='b'>+</span>a\" will match the entire string \"<b>alabama</b>\" where \"<b>a<span class='b'>+?</span>a</b>\" will simply match \"<b>ala</b>\""},{usr:'Chad',txt:"...why can I only use like 15 characters in the find field?"},{usr:'Ned',txt:"Uh-oh..."}],
 'help':{rule:2,message:{name:'Marie',txt:'By default, the "<b><span class="b">+</span></b>" token is <b>greedy</b>, meaning that it will match as much as it can in a string. Adding a "<b><span class="b">?</span></b>" after makes it <b>lazy</b>, having it continue only until the next match. i.e. in the string "califragilistic", "<b>i<span class="b">+</span>i" will match "<b>ifragilisti"</b> where "<b>i<span class="b">+?</span>a</b>" will only match "<b>ifragi</b>"',header:'Helpful Tip'}},
 'hint':[{name:'Ned',txt:'Lazy matches work best sandwiched between two anchor characters. Just know you wont see if they\'ve worked until both anchors are present in the "find"',header:'Helpful Tip'},{name:'Marie',txt:'You\'re lucky that everything you need to remove has two distinct anchors, <b>(</b> and <b>)</b>.',header:'Helpful Tip'}],
 'promptName':'No Notes!',
@@ -753,7 +752,7 @@ Jimmy grinned back.  "Thank you, Peter," said he.`,
 '1':{
 'input':'It is the best of times, it is the worst of times, it is the age of wisdom, it is the age of foolishness, it is the epoch of belief, it is the epoch of incredulity, it is the season of Light, it is the season of Darkness, it is the spring of hope, it is the winter of despair, we have everything before us, we have nothing before us, we are all going direct to Heaven, we are all going direct the other way - in short, the period is so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.',
 'goal':'It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way - in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.',
-'prompt':[{usr:'Boss',txt:"What the heck happend to our new reprint of a Tale of Two Cities?"},{usr:'Marie',txt:"What do you mean? 🤷"},{usr:'Boss',txt:"The tense is all wrong! How does something like this even happen?"},{usr:"Chad",txt:"Looks right to me..."},{usr:'Marie',txt:"Maybe the new hire can help?"},{usr:'Boss',txt:"Can someone from IT walk them through it?"},{usr:'Ned',txt:"Use find and replace (and JS regular expressions) to fix the errors in the text"},{usr:"Chad",txt:"In other words, get the stuff on the left look like the stuff on the right."},{usr:"Ned",txt:"I got you started. You'll need a special regex symbol for this: <b>\"<span class='b'>\\s</span>\"</b>. Look at the 'REGEX' tab above for more info, I'll keep it updated as you go along"}],
+'prompt':[{usr:'Boss',txt:"What the heck happend to our new reprint of a Tale of Two Cities?"},{usr:'Marie',txt:"What do you mean? 🤷"},{usr:'Boss',txt:"The tense is all wrong! How does something like this even happen?"},{usr:"Chad",txt:"Looks right to me..."},{usr:'Marie',txt:"Maybe the new hire can help? The Spacebar isn't working for me..."},{usr:'Boss',txt:"Can someone from IT walk them through it?"},{usr:'Ned',txt:"Use find and replace (and JS regular expressions) to fix the errors in the text"},{usr:"Chad",txt:"In other words, get the stuff on the left look like the stuff on the right."},{usr:"Ned",txt:"I got you started. You'll need a special regex symbol for this since the spacebar doesn't work in the find field in our system: <b>\"<span class='b'>\\s</span>\"</b>. Look at the 'RegExp' tab above for more info, I'll keep it updated as you go along"}],
 
 'initialRuleState':[{find:'have',replace:'had',flags:'g',visible:true,highlit:false}],
 'promptName':'Fwd:What the Dickens??',
@@ -763,6 +762,9 @@ Jimmy grinned back.  "Thank you, Peter," said he.`,
 'id':'taletwocities'
 
   },
+
+
+
 
 'REMOVED':{
 'input':`// program to check if a number is prime or not
@@ -803,7 +805,7 @@ else if (number > 1) {
 '17':{
 'input':`Mary was beautiful, feminine in spirit, and lovely. Elizabeth was talented, masculine and plain. Mary was artless, unaffected and gentle. Elizabeth was heartless, intriguing and insincere. With Mary, though her ruling principle was ambition, her ruling passion was love. Her love led her to great transgressions and into many sorrows, but mankind pardon the sins and pity the sufferings which are caused by love more readily than those of any other origin. With Elizabeth, ambition was the ruling principle, and the ruling passion too. Love, with her, was only a pastime. She was, while connected with him, not a terribly faithful, true and affectionate wife.`,
 'goal':`Mary was beautiful, feminine in spirit, and lovely. Elizabeth was talented, masculine, and plain. Mary was artless, unaffected, and gentle. Elizabeth was heartless, intriguing, and insincere. With Mary, though her ruling principle was ambition, her ruling passion was love. Her love led her to great transgressions and into many sorrows, but mankind pardon the sins and pity the sufferings which are caused by love more readily than those of any other origin. With Elizabeth, ambition was the ruling principle, and the ruling passion too. Love, with her, was only a pastime. She was, while connected with him, not a terribly faithful, true, and affectionate wife.`,
-'prompt':[{usr:'Boss',txt:"Some people are complaining about grammar in our publications"},{usr:'Marie',txt:"Whats wrong?"},{usr:'Boss',txt:"\"what<b>'</b>s\", Marie! This is exactly why I'm taking so much heat here. Apparently we're missing some oxford commas."},{usr:'Chad',txt:"What<b>'</b>s in the world is an oxford comma?"},{usr:'Boss',txt:"...it's a comma before 'and' <last item> in a list"},{usr:'Chad',txt:"Oh my god this is SO boring...."},{usr:'Marie',txt:"Whom would care about something so trivial?"},{usr:'Boss',txt:"scholars, librarians, and grammarists!"},{usr:'Chad',txt:"I'm falling asleep..."},{usr:'Boss',txt:"wake up, shape up, and get to work!"},{usr:'Ned',txt:"so we're having trouble with capital letters again...."},{usr:'Chad',txt:"🥱😴"}],
+'prompt':[{usr:'Boss',txt:"Some people are complaining about grammar in our publications"},{usr:'Marie',txt:"Whats wrong?"},{usr:'Boss',txt:"\"what<b>'</b>s\", Marie! This is exactly why I'm taking so much heat here. Apparently we're missing some oxford commas."},{usr:'Chad',txt:"What<b>'</b>s in the world is an oxford comma?"},{usr:'Boss',txt:"...it's a comma before 'and' <last item> in a list"},{usr:'Chad',txt:"Oh my god this is SO boring...."},{usr:'Marie',txt:"Whom would care about something so trivial?"},{usr:'Boss',txt:"scholars, librarians, and grammarists!"},{usr:'Chad',txt:"I'm falling asleep..."},{usr:'Boss',txt:"wake up, shape up, and get to work!"},{usr:'Ned',txt:"so we're having trouble with capital letters again.... Doesn't seem like they'll work for this..."},{usr:'Chad',txt:"🥱😴"},{usr:'Ned',txt:'I have an idea! Try a new operator, <b><span class="b">\\w</span></b> that will match any letter character!'},{usr:'Chad',txt:"💤💤💤💤"}],
 'promptName':'Oxford Coma',
 'hint': [{ name: 'Ned', txt: 'An oxford comma can be found by matching a comma, a word and then "and". Use your new operator "<b><span class="b">\\w</span></b>"', header: 'Helpful Tip' },{ name: 'Ned', txt: 'Pluralizing your <b><span class="b">\\w</span></b> and capturing it will match multiple different words, provided you define the anchors around it...', header: 'Helpful Tip' },{ name: 'Marie', txt: 'Often when you need to insert something into what you\'ve matched, it\'s helpful to capture before and after the insertion and combine using $1X$2', header: 'Helpful Tip' }],
 'bannedChars':['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'],
@@ -814,7 +816,7 @@ else if (number > 1) {
 '9':{
 'input':`All Christian work is social, Mrs. Constable, but we endeavour to found it on love. 'Thou shalt love thy neighbour as thyself.' You favour your own soul as precious, since it is the shrine of God, our saviour. And for that meagre reason you hold equally precious your neighbour's soul. Love comes first, as revelation, as labour, as imparted knowledge, as the sombre, divine gist of autonomy. And then one cannot help but honour our work for which we are made by the lustre of nature. And in order to discover the very metre and centre for what that task is, we must wait.`,
 'goal':`All Christian work is social, Mrs. Constable, but we endeavor to found it on love. 'Thou shalt love thy neighbor as thyself.' You favor your own soul as precious, since it is the shrine of God, our savior. And for that meager reason you hold equally precious your neighbor's soul. Love comes first, as revelation, as labor, as imparted knowledge, as the somber, divine gist of autonomy. And then one cannot help but honor our work for which we are made by the luster of nature. And in order to discover the very meter and center for what that task is, we must wait.`,
-'prompt':[{usr:'Boss',txt:"You know, I love you guys"},{usr:'Chad',txt:"Uh... are you feeling ok?"},{usr:'Boss',txt:"I just sometimes worry I take you all for granted and want you all to know my true feelings. Besides, the bible says 'Love Thy Neighbour'"},{usr:'Chad',txt:"I am so uncomfortable right now"},{usr:'Chad',txt:"Besides, why are you spelling it like that? Like we're in Britain?"},{usr:'Boss',txt:"Funny you brought that up, I'm actually getting complaints that some of our spellings need to be more americanised."},{usr:'Marie',txt:"AmericaniZed"},{usr:'Boss',txt:"Right, right. We just need to fix those spelling errors"},{usr:'Chad',txt:"I think you mispelled \"we\""},{usr:'Boss',txt:"I did, yes - YOU need to fix those spelling errors. With love."},{usr:'Marie',txt:"Ever feel like our boss loves us too much?"}],
+'prompt':[{usr:'Boss',txt:"You know, I love you guys"},{usr:'Chad',txt:"Uh... are you feeling ok?"},{usr:'Boss',txt:"I just sometimes worry I take you all for granted and want you all to know my true feelings. Besides, the bible says 'Love Thy Neighbour'"},{usr:'Chad',txt:"I am so uncomfortable right now"},{usr:'Chad',txt:"Besides, why are you spelling it like that? Like we're in Britain?"},{usr:'Boss',txt:"Funny you brought that up, I'm actually getting complaints that some of our spellings need to be more americanised."},{usr:'Marie',txt:"AmericaniZed"},{usr:'Boss',txt:"Right, right. We just need to fix those spelling errors"},{usr:'Chad',txt:"I think you misspelled \"we\""},{usr:'Boss',txt:"I did, yes - YOU need to fix those spelling errors. With love."},{usr:'Marie',txt:"Ever feel like our boss loves us too much?"}],
 'hint': [{ name: 'Chad', txt: 'I thought "order of operations" was just a department\'s lunch run, but I\'ve heard it matters here too!', header: 'Helpful Tip' },{ name: 'Marie', txt: 'Since issues arise at the ends of the words, try isolating the ends with "<b><span class="b">\\b</span></b>"', header: 'Helpful Tip' },{ name: 'Marie', txt: 'You can use uppercase letters to match the opposite of the token\'s used so far, trying putting a "<b><span class="b">\\B</span></b>" behind a string to make sure it\'s part of a larger word and not just on its own', header: 'Helpful Tip'}],
 'promptName':'Love Thy Neighbour',
 'maxRules':5,
@@ -975,7 +977,7 @@ rnbqkbnr/ppppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w
 '23':{
 'input':`ensure, precision, parse, tales, public, metal, post, key, drown, voter, disagree, authorize, pears, absolute, gallery, shaft, mouth, complain, steal, lost, relating, assignment, corner, soak, relinquish, fork, estate, pots, least, discovery, lasting, coup, notion, symptom, contrast, tax, brush, bird, altering, film, troop, mutation, alerting, do, fortunate, restless, bubble, publisher, buy, dilute, mass, possible, kill, tops, block, spare, charge, combine, censorship, base, abstract, steep, speaker, pursuit, dinner, overlook, say, hallway, well, sweat, integral, practice, truck, retreat, advantage, background, corruption, equal, instinct, eye, chicken, muggy, integrity, argument, treasurer, dine, teals, discriminate, slate, approach, stop, amuse, seize, spot, spear, die, time, haircut, carbon, occupy, gravel, arrest, basin, bury, desert, customer, phone, game, achievement, conservation, discourage, remind, offensive, drug, seal, reaps, forget, bloody, union, legislation, triangle, stale, change, reality, forgotten, ponder, trench, carriage, favor, shame, watch, density, fountain`,
 'goal':`ensure, precision, public, metal, post, key, drown, voter, disagree, authorize, absolute, gallery, shaft, mouth, complain, lost, assignment, corner, soak, relinquish, fork, estate, pots, discovery, lasting, coup, notion, symptom, contrast, tax, brush, bird, film, troop, mutation, do, fortunate, restless, bubble, publisher, buy, dilute, mass, possible, kill, tops, block, charge, combine, censorship, base, abstract, speaker, pursuit, dinner, overlook, say, hallway, well, sweat, practice, truck, retreat, advantage, background, corruption, equal, instinct, eye, chicken, muggy, integrity, argument, treasurer, dine, discriminate, approach, stop, amuse, seize, spot, die, time, haircut, carbon, occupy, gravel, arrest, basin, bury, desert, customer, phone, game, achievement, conservation, discourage, remind, offensive, drug, seal, forget, bloody, union, legislation, change, reality, forgotten, ponder, trench, carriage, favor, shame, watch, density, fountain`,
-'prompt':[{usr:'Boss',txt:"Hey, we're getting complaints about anagrams."},{usr:'Marie',txt:"Sorry, what?"},{usr:'Boss',txt:"Some of the customers want us to remove words that are anagrams."},{usr:'Marie',txt:"...why? People love anagrams"},{usr:'Boss',txt:"Not according to our latest feedback"},{usr:'Otto',txt:`I've been playing this <a href="javascript:window.open('https://store.steampowered.com/app/1654280/Anagraphs_An_Anagram_Game_With_a_Twist/','_blank','frame=true,nodeIntegration=no')"><b>Free New Game</b></a> with anagrams and I love it`},{usr:'Marie',txt:"See!"},{usr:'Boss',txt:"It's probably free because people hate anagrams..."},{usr:'Marie',txt:"Ugh... Chad, what do you think?"},{usr:'Chad',txt:"Did you know an '<b>astronmer</b>' is a '<b>moon starer</b>'?"},{usr:'Marie',txt:"..."},{usr:'Chad',txt:"And that '<b>eleven plus two</b>' is '<b>twelve plus one</b>'"},{usr:'Marie',txt:"... You're so clever... Ned? Thoughts on anagrams?"},{usr:'Ned',txt:"My thought is that you could use a new token, <b>\"<span class='b'>{ }</span>\"</b>. This way you can specify the exact number (or a range) for matching the preceeding token."}],
+'prompt':[{usr:'Boss',txt:"Hey, we're getting complaints about anagrams."},{usr:'Marie',txt:"Sorry, what?"},{usr:'Boss',txt:"Some of the customers want us to remove words that are anagrams."},{usr:'Marie',txt:"...why? People love anagrams"},{usr:'Boss',txt:"Not according to our latest feedback"},{usr:'Otto',txt:`I've been playing this <a href="javascript:window.open('https://store.steampowered.com/app/1654280/Anagraphs_An_Anagram_Game_With_a_Twist/','_blank','frame=true,nodeIntegration=no')"><b>Free New Game</b></a> with anagrams and I love it`},{usr:'Marie',txt:"See!"},{usr:'Boss',txt:"It's probably free because people hate anagrams..."},{usr:'Marie',txt:"Ugh... Chad, what do you think?"},{usr:'Chad',txt:"Did you know an '<b>astronomer</b>' is a '<b>moon starer</b>'?"},{usr:'Marie',txt:"..."},{usr:'Chad',txt:"And that '<b>eleven plus two</b>' is '<b>twelve plus one</b>'"},{usr:'Marie',txt:"... You're so clever... Ned? Thoughts on anagrams?"},{usr:'Ned',txt:"My thought is that you could use a new token, <b>\"<span class='b'>{ }</span>\"</b>. This way you can specify the exact number (or a range) for matching the preceding token."}],
 'hint': [{ name: 'Ned', txt: `Consider the fact that two anagrams have the same series of letters but the order of these letters does not matter.`, header: 'Helpful Tip' },{ name: 'Marie', txt: `"<b><span class="b">{</span>2<span class="b">}</span></b>" will match exactly 2 of the preceeding token, even if that token is a match group!`, header: 'Helpful Tip' }],
 'promptName':'Nag a Ram',
 'maxRules':3,
@@ -1021,7 +1023,7 @@ K:C
 '26':{
 'input':`When he reveals a competent number of words, it will be seasonable to teach him under the titles singular and plural, the formation of plurals from singulars, by adding "s", or "es"; as hand, hands; face, feels, faces, sheet, sheets, etc. Which, except the irregulars, i.e. "geese", "teeth" and "moose", will cross for possessives, to be after taught him, which are formed by their primitives by like addition of "s" or "es", except some few irregulars, as my, mine; thy, thine; our, ours; your, yours; his, her, hers; their, theirs, etc. And in all those and other like cases, it will be proper first to show him the particulars, and then the general title. Then teach him in another page or paper, the particles, a, an, the, that, these, those. And the pronouns, I, me, my, mine, thou, thy, thine, we, us, our, ours, ye, you, your, yours, he, him, his, she, her, hers, they, them, their, shoes, heirs, who, whom, whose. Then under the titles substantive, adjective, teach him to connect these, as my hand, your head, his foot, his feet, her arm, her arms, our hats, John's coat, William's band, etc. And in order to furnish him with more adjectives, under the title colours you may place black, white, gray, green, blue, yellow, red, etc., and having showed the particulars, let him feel that these are called colours. The like for taste and smell and sound; as sweet, bitter, sour, stink and bass.`,
 'goal':`When he reveal a competent number of word, it will be seasonable to teach him under the title singular and plural, the formation of plural from singular, by adding "s", or "es"; as hand, hand; face, feel, face, sheet, sheet, etc. Which, except the irregular, i.e. "goose", "tooth" and "moose", will cross for possessive, to be after taught him, which are formed by their primitive by like addition of "s" or "es", except some few irregular, as my, mine; thy, thine; our, our; your, your; his, her, her; their, their, etc. And in all those and other like case, it will be proper first to show him the particular, and then the general title. Then teach him in another page or paper, the particle, a, an, the, that, these, those. And the pronoun, I, me, my, mine, thou, thy, thine, we, us, our, our, ye, you, your, your, he, him, his, she, her, her, they, them, their, shoe, heir, who, whom, whose. Then under the title substantive, adjective, teach him to connect these, as my hand, your head, his foot, his foot, her arm, her arm, our hat, John's coat, William's band, etc. And in order to furnish him with more adjective, under the title colour you may place black, white, gray, green, blue, yellow, red, etc., and having showed the particular, let him feel that these are called colour. The like for taste and smell and sound; as sweet, bitter, sour, stink and bass.`,
-'prompt':[{usr:'Boss',txt:"It's been shown that the singular version of a word is more popular than its plural counterpart. So for this text, stem all the plurals!"},{usr:'Marie',txt:"Shown.... by whom?"},{usr:'Boss',txt:"The focus group, Marie! Keep up!"},{usr:'Ned',txt:"I tried to explain that stemming is better done with other methods, but it looks like you guys are on your own here..."},{usr:'Marie',txt:"Chad? Some help here? Even a snarky but futile comment?"},{usr:'Chad',txt:"Sorry Marie, looks like you're all alone on this one"},{usr:'Marie',txt:"..."},{usr:'Chad',txt:"Just you. No one else"},{usr:'Marie',txt:"..."},{usr:'Chad',txt:"Not pluaral. Singular."},{usr:'Marie',txt:"..."}],
+'prompt':[{usr:'Boss',txt:"It's been shown that the singular version of a word is more popular than its plural counterpart. So for this text, stem all the plurals!"},{usr:'Marie',txt:"Shown.... by whom?"},{usr:'Boss',txt:"The focus group, Marie! Keep up!"},{usr:'Ned',txt:"I tried to explain that stemming is better done with other methods, but it looks like you guys are on your own here..."},{usr:'Marie',txt:"Chad? Some help here? Even a snarky but futile comment?"},{usr:'Chad',txt:"Sorry Marie, looks like you're all alone on this one"},{usr:'Marie',txt:"..."},{usr:'Chad',txt:"Just you. No one else"},{usr:'Marie',txt:"..."},{usr:'Chad',txt:"Not plural. Singular."},{usr:'Marie',txt:"..."}],
 'hint': [{ name: 'Chad', txt: 'My Uncle used to say, "capturing what works is an easy way to preserve what shouldn\'t be lost." I wonder if he\'s out of jail yet..."', header: 'Helpful Tip' },{ name: 'Marie', txt: 'Since you only have so many rules, try using your character matches and "or" operators to capture as many different issues at once.', header: 'Helpful Tip' }],
 'promptName':'Impluralusable',
 'maxRules':5,
@@ -1037,7 +1039,7 @@ K:C
 "Oh please", quipped Artie. "Foremost mind your P's and Q's, and further know that a book in several volumes loses an unfair proportion of its usefulness, and almost all its value, when one or more of the volumes are gone.  Grote's works, or Mill's, Carlyle's, or Milman's, seem nothing when they are incomplete." Bertrand Russell's ramblings aren't an exception.`,
 'prompt':[{usr:'Boss',txt:"The apostrophes are missing in the reprint, what happened?"},{usr:'Chad',txt:"Are apostrophes really that important?"},{usr:'Boss',txt:"Yes! It marks possession among other essential semantics!"},{usr:'Chad',txt:"Come on, you totally just googled that..."},{usr:'Marie',txt:"My therapist says possessiveness is a character flaw and is ultimately a fear of loss"},{usr:'Boss',txt:"Would you two stop trying to get out of this assignment?"},{usr:'Chad',txt:"What is it that you fear losing!?? Get it off your chest!"},{usr:'Boss',txt:"My patience! Get to work restoring the apostrophes!"}],
 'promptName':'Possessive Problems',
-'hint': [{ name: 'Otto', txt: 'A simple way to capture any capital letter is "<b><span class="d">[</span>A-Z<span class="d">]</span></b>".', header: 'Helpful Tip' },{ name: 'Ned', txt: '"<b><span class="b">*</span></b>" may seem interchangable with "<b><span class="b">+</span></b>" but using one or the other strategically can often help tremendously', header: 'Helpful Tip' },],
+'hint': [{ name: 'Otto', txt: 'A simple way to capture any capital letter is "<b><span class="d">[</span>A-Z<span class="d">]</span></b>".', header: 'Helpful Tip' },{ name: 'Ned', txt: '"<b><span class="b">*</span></b>" may seem interchangeable with "<b><span class="b">+</span></b>" but using one or the other strategically can often help tremendously', header: 'Helpful Tip' },],
 'maxRules':3,
 'id':'possessive'
 },
@@ -1319,7 +1321,7 @@ The counted years of mortal life go by.`,
 'input':`t nlxp, t dlh, t nzybfpcpo`,
 'goal':`I came, I saw, I conquered`,
 'prompt':[{usr:'Boss',txt:"hsle td rztyr zy??"},{usr:'Chad',txt:"T slgp yz topl..."},{usr:'Ned',txt:"Ooh... sorry guys, seems like a bug is causing all output to be shifted as a caesar cipher"},{usr:'Marie',txt:"szh td esle pgpy azddtmwp?"},{usr:'Ned',txt:"A caesar cipher is substitution method where each letter is replaced with another one a fixed number of positions down the alphabet"},{usr:'Boss',txt:"T opxlyo lydhpcd qzc estd!"},{usr:'Ned',txt:"Right, well.... we'll get to fixing it asap, also you can't use more than five characters in any of the fields, working on a fix."}],
-'hint':[{name:'Ned',txt:'A Caesar Cipher is one where each letter is replaced with another letter in the alphabet. The letter "s" is encoded by the letter "d" for example, and must be replaced"',header:'Helpful Tip'},{name:'Ned',txt:'Order of the rules matter, you don\'t want to accidently substitute the same letter twice!',header:'Helpful Tip'},{name:'Chad',txt:'Having a hard time optimizing? Try replacing chunks and not worrying about the substitution logic!'}],
+'hint':[{name:'Ned',txt:'A Caesar Cipher is one where each letter is replaced with another letter in the alphabet. The letter "s" is encoded by the letter "d" for example, and must be replaced"',header:'Helpful Tip'},{name:'Ned',txt:'Order of the rules matter, you don\'t want to accidentally substitute the same letter twice!',header:'Helpful Tip'},{name:'Chad',txt:'Having a hard time optimizing? Try replacing chunks and not worrying about the substitution logic!'}],
 'promptName':'Veni Vidi Vici',
 'maxCharsFind':5,
 'maxCharsReplace':5,
@@ -1421,7 +1423,7 @@ Before speaking, he turned to that empty space of undulating blue, now narrowing
 '39':{
 'input':`Jordan, Theodore, Maverick, Matthew, Lincoln, Penelope, Elias, Ryan, Ruby, Levi, Jeremiah, Brielle, Luca, Jack, Dylan, Emily, Jayden, Josiah, Thomas, Olivia, Ariana, Isaiah, Allison, Jackson, Jace, Joshua, Noah, Jackson, Ariana, Miles, Jacob, Alice, Natalie, Natalia, Isaiah, Addison, Leo, Scarlett, Evelyn, Lily, Josiah, Cora, Elena, Maya, William, Isabella, Brooklyn, Connor, Harper, Julian, Wesley, Dominic, Serenity, Adam, Jameson, Colton, Jaxson, Paisley, Sarah, Allison, Sebastian, Emily, Christopher, Gabriel, Emery, Hannah, Delilah, Hunter, Jose, Avery, Sophia, Anthony, Quinn, Willow, Nevaeh, Eleanor, Easton, Abigail, Autumn, Natalia, Sebastian, Roman, Eva, Samuel, Hailey, Aiden, Carter, Angel, Riley, Theodore, Cameron, Everly, Thomas, Zoe, Greyson, Logan, Cooper, Autumn, Avery, Nolan, Emilia, Emma, Hazel, Jonathan, Andrew, Carson, Christopher, Layla, Camila, Silas, Luke, Amelia, Savannah, Quinn, Grace, Michael, Ethan, Aria, Caleb, Aaliyah, Ezra, Theodore, Ezekiel, Anna, Mila, Jade, Madeline, Landon, Henry, Dylan, Scarlett, Nova, Aaron, Aiden, Axel, Eliana, Naomi, Daniel, Ian, Hudson, Lydia, Quinn, Lucy, Penelope, Maverick, Mateo, Claire, Hailey, Skylar, Mason, Stella, Ethan, Alexander, Brooks, Hailey, Adrian, Sadie, Jacob, Elijah, Kennedy, Jaxon, Lillian, Scarlett, Grayson, Autumn, Ivy, Gianna, Elizabeth, David, Sophie, Nevaeh, Xavier, Isaac, Kai, Madelyn, Liam, Kayden, Aria, Eli, Wyatt, Gabriella, Leonardo, Mia, Logan, Audrey, Maya, Autumn, Theodore, Mateo, Luna, Ella, Ellie, Leah, Levi, Daniel, Lucas, Nicholas, Genesis, Scarlett, Scarlett, Oliver, Audrey, Everett, James, Parker, Ezra, Hailey, Owen, Asher, Christopher, Bella, Hailey, Jack, Kinsley, Everleigh, Victoria, Robert, Christian, Isla, Nora, Eleanor, Charles, Nathan, Caroline, Owen, Aurora, Piper, Adeline, Valentina, Charles, Jaxon, John, Zoey, Aubrey, Joseph, Noah, Ava, Logan, Austin, Sofia, Madison, Josephine, Santiago, Madison, Layla, Audrey, Violet, Charlotte, Samantha, Mila, Leilani, Benjamin, Peyton, Chloe`,
 'goal':`Jordan, Matthew, Lincoln, Elias, Ryan, Ruby, Jeremiah, Brielle, Luca, Jayden, Olivia, Jace, Joshua, Jackson, Ariana, Miles, Alice, Natalie, Isaiah, Addison, Leo, Evelyn, Lily, Josiah, Cora, Elena, William, Isabella, Brooklyn, Connor, Harper, Julian, Wesley, Dominic, Serenity, Adam, Jameson, Colton, Jaxson, Paisley, Sarah, Allison, Emily, Gabriel, Emery, Hannah, Delilah, Hunter, Jose, Sophia, Anthony, Willow, Easton, Abigail, Natalia, Sebastian, Roman, Eva, Samuel, Carter, Angel, Riley, Cameron, Everly, Thomas, Zoe, Greyson, Cooper, Avery, Nolan, Emilia, Emma, Hazel, Jonathan, Andrew, Carson, Camila, Silas, Luke, Amelia, Savannah, Grace, Michael, Caleb, Aaliyah, Ezekiel, Anna, Jade, Madeline, Landon, Henry, Dylan, Nova, Aaron, Aiden, Axel, Eliana, Naomi, Ian, Hudson, Lydia, Quinn, Lucy, Penelope, Maverick, Claire, Skylar, Mason, Stella, Ethan, Alexander, Brooks, Adrian, Sadie, Jacob, Elijah, Kennedy, Lillian, Grayson, Ivy, Gianna, Elizabeth, David, Sophie, Nevaeh, Xavier, Isaac, Kai, Madelyn, Liam, Kayden, Aria, Eli, Wyatt, Gabriella, Leonardo, Mia, Maya, Autumn, Theodore, Mateo, Luna, Ella, Ellie, Leah, Levi, Daniel, Lucas, Nicholas, Genesis, Scarlett, Oliver, Everett, James, Parker, Ezra, Asher, Christopher, Bella, Hailey, Jack, Kinsley, Everleigh, Victoria, Robert, Christian, Isla, Nora, Eleanor, Nathan, Caroline, Owen, Aurora, Piper, Adeline, Valentina, Charles, Jaxon, John, Zoey, Aubrey, Joseph, Noah, Ava, Logan, Austin, Sofia, Josephine, Santiago, Madison, Layla, Audrey, Violet, Charlotte, Samantha, Mila, Leilani, Benjamin, Peyton, Chloe`,
-'prompt':[{usr:'Boss',txt:"So I bought another list from that same company and sure enough, more duplicates...."},{usr:'Marie',txt:"Why would you do that??"},{usr:'Boss',txt:"It's called giving a place a second chance!"},{usr:'Chad',txt:"Is this a list of names?"},{usr:'Boss',txt:"Yes! Prospective mothers will pay top dollar for literature that gives them ideas for their new baby, but NOT if there are tons of duplicates!"},{usr:'Marie',txt:"Well, we did this last time, it's just the same thing again, right?"},{usr:'Boss',txt:"Yeah, I mean - yeah. Except this time the duplicates are all mixed up and aren't consecutive..."},{usr:'Chad',txt:"Oh no..."},{usr:'Ned',txt:"I got something that may help: positive lookaheads!"},{usr:'Boss',txt:"Yes, a positive outlook can do wonders!"},{usr:'Ned',txt:"No, if you wrap a regex (represented by ellipses) like this:<b>\"<span class='c'>(?=</span>...<span class='c'>)</span>\"</b>, t lets you match a thing that is followed by another thing without capturing that other thing!"},{usr:'Marie',txt:"...What????"},{usr:'Chad',txt:"I give up."}],
+'prompt':[{usr:'Boss',txt:"So I bought another list from that same company and sure enough, more duplicates...."},{usr:'Marie',txt:"Why would you do that??"},{usr:'Boss',txt:"It's called giving a place a second chance!"},{usr:'Chad',txt:"Is this a list of names?"},{usr:'Boss',txt:"Yes! Prospective mothers will pay top dollar for literature that gives them ideas for their new baby, but NOT if there are tons of duplicates!"},{usr:'Marie',txt:"Well, we did this last time, it's just the same thing again, right?"},{usr:'Boss',txt:"Yeah, I mean - yeah. Except this time the duplicates are all mixed up and aren't consecutive..."},{usr:'Chad',txt:"Oh no..."},{usr:'Ned',txt:"I got something that may help: positive lookaheads!"},{usr:'Boss',txt:"Yes, a positive outlook can do wonders!"},{usr:'Ned',txt:"No, if you wrap a regex (represented by ellipses) like this:<b>\"<span class='c'>(?=</span>...<span class='c'>)</span>\"</b>, it lets you match a thing that is followed by another thing without capturing that other thing!"},{usr:'Marie',txt:"...What????"},{usr:'Chad',txt:"I give up."}],
 'hint': [{ name: 'Ned', txt: `A Positive lookahead is a way to match the preceeding regex phrase with a subsequent pattern, while NOT matching that subsequent pattern. I encourage you to play around with it and see how it works by trying different things, maybe even in the level editor`},{ name: 'Otto', txt: `Try capturing a name, and then doing a positive lookaead with it as a backreference. That's the key!`, header: 'Helpful Tip'}],
 'promptName':'Ohh Baby!',
 'maxRules':5,
@@ -1444,7 +1446,7 @@ He started with long steps towards Lesser Hill, and Adam was soon furtively runn
 "So much for the fortified heights; but the hollows too have their own story. But how the time passes! We must hurry home, or your uncle will wonder what has X of us."
 
 He started with long steps towards X Hill, and Adam was soon furtively running in order to X up with him.`,
-'prompt':[{usr:'Boss',txt:"According to Reddit, \"e\" is people's least favorite vowel"},{usr:'Chad',txt:"'e' is a vowel?"},{usr:'Marie',txt:"Chad..."},{usr:'Marie',txt:"Anyway, so what? It's not like we can just remove all words that have an \"e\" in them, that's rediculous...."},{usr:'Marie',txt:"Um... Boss?"},{usr:'Boss',txt:"Right, right. That is rediculous. Just replace all words that have two or more \"e\"'s in them with an X."},{usr:'Marie',txt:"..."},{usr:'Ned',txt:"A new symbol may help, <b>\"<span class='b'>*</span>\"</b> - it's like <b>\"<span class='b'>+</span>\"</b> but matches zero or more instead of one or more"}],
+'prompt':[{usr:'Boss',txt:"According to Reddit, \"e\" is people's least favorite vowel"},{usr:'Chad',txt:"'e' is a vowel?"},{usr:'Marie',txt:"Chad..."},{usr:'Marie',txt:"Anyway, so what? It's not like we can just remove all words that have an \"e\" in them, that's ridiculous...."},{usr:'Marie',txt:"Um... Boss?"},{usr:'Boss',txt:"Right, right. That is ridiculous. Just replace all words that have two or more \"e\"'s in them with an X."},{usr:'Marie',txt:"..."},{usr:'Ned',txt:"A new symbol may help, <b>\"<span class='b'>*</span>\"</b> - it's like <b>\"<span class='b'>+</span>\"</b> but matches zero or more instead of one or more"}],
 'hint': [{ name: 'Ned', txt: `"<b><span class="b">*</span></b>" is great because it makes pluralization optional!`, header: 'Helpful Tip' },{ name: 'Otto', txt: `"<b><span class="b">\\d*</span>x</b>" will match any number of numerals before an "x" but will also match an "x" that has no preceeding numerals`, header: 'Helpful Tip'}],
 'promptName':"Eek!",
 'maxRules':1,
@@ -1458,8 +1460,9 @@ Some six weeks after this, inquiry began to be made as to a certain cheque for t
 
 In October, Mrs. Crawley paid the twenty pounds to Fletcher, the butcher, and in November Lord Lufton's cheque was traced back through the Barchester bank to Mr. Crawley's hands. A brickmaker of Hoggle End, much favoured by Mr. Crawley, had asked for change over the counter of this Barchester bank,--not, as will be understood, the bank on which the cheque was drawn--and had received it. The accommodation had been refused to the man at first, but when he presented the cheque the second day, bearing Mr. Crawley's name on the back of it, together with a note from Mr. Crawley himself, the money had been given for it; and the identical notes so paid had been given to Fletcher, the butcher, on the next day by Mrs. Crawley. When inquiry was made, Mr. Crawley stated that the cheque had been paid to him by Mr. Soames, on behalf of the rentcharge due to him by Lord Lufton. But the error of this statement was at once made manifest. There was the cheque, signed by Mr. Soames himself, for the exact amount,--twenty pounds four shillings. As he himself declared, he had never in his life paid money on behalf of Lord Lufton by a cheque drawn by his lordship. The cheque given by Lord Lufton, and which had been lost, had been a private matter between them. His lordship had simply wanted change in his pocket, and his agent had given it to him. Mr. Crawley was speedily shown to be altogether wrong in the statement made to account for possession of the cheque.`,
 'goal':`repeated, receive, persevere, defended, seventeen, seventeen, determined, successful, business, believed, visiting, received, accommodation, presented, error, statement, between, statement, possession`,
-'prompt':[{usr:'Boss',txt:"Ok, big focus group breakthrough..."},{usr:'Chad',txt:"Oh no..."},{usr:'Boss',txt:"People love love love repitition! In particular, words that have letters repeated in them"},{usr:'Marie',txt:"Why?"},{usr:'Boss',txt:"It's familiar, comforting.... Anyway, just remove any word that doesn't have three of the same letter in it!"}],
+'prompt':[{usr:'Boss',txt:"Ok, big focus group breakthrough..."},{usr:'Chad',txt:"Oh no..."},{usr:'Boss',txt:"People love love love repetition! In particular, words that have letters repeated in them"},{usr:'Marie',txt:"Why?"},{usr:'Boss',txt:"It's familiar, comforting.... Anyway, just remove any word that doesn't have three of the same letter in it!"}],
 'hint': [{ name: 'Ned', txt: `Just like the last level, you're looking to remove everything you DO NOT match. That's a big key with negative lookaheads`},{ name: 'Otto', txt: `Don't be afraid to use paranetheses even if you're not capturing, they can be useful with the logic of the regex!`, header: 'Helpful Tip'}],
+'allowedFlags':["g","i"],
 'promptName':"Replication Admiration",
 'maxRules':5,
 'id':'repeatedletters'
@@ -1545,15 +1548,222 @@ In October, Mrs. Crawley paid the twenty pounds to Fletcher, the butcher, and in
 7,207,584,825
 99
 94,010,990,459`,
-'prompt':[{usr:'Boss',txt:"I bought another list, and no duplicates this time, just like they promised!"},{usr:'Chad',txt:"Hoorah."},{usr:'Marie',txt:"Are these numbers?"},{usr:'Boss',txt:"Yes! Random numbers. The most random that money can buy!"},{usr:'Marie',txt:"Wow. That's... great. They're kind of hard to read though, where are all the commas?"},{usr:'Boss',txt:"That was an extra fee, so I told them to forget it! I have a dedicated team who can add those in for me. "},{usr:'Marie',txt:"Oh no..."},{usr:'Chad',txt:"But I see all the commas in the numbers on my screen"},{usr:'Boss',txt:"Really?"},{usr:'Chad',txt:"Oh yes, they're definitely there. They just camouflage well with the background. So no need for further work."},{usr:'Boss',txt:"Are you sure?"},{usr:'Chad',txt:"Absolutely. And this is not an \"emperor's new clothes\" bit, so, you know, don't even think that."}],
+'prompt':[{usr:'Boss',txt:"I bought another list, and no duplicates this time, just like they promised!"},{usr:'Chad',txt:"Hoorah."},{usr:'Marie',txt:"Are these numbers?"},{usr:'Boss',txt:"Yes! Random numbers. The most random that money can buy!"},{usr:'Marie',txt:"Wow. That's... great. They're kind of hard to read though, where are all the commas?"},{usr:'Boss',txt:"That was an extra fee, so I told them to forget it! I have a dedicated team who can add those in for me. "},{usr:'Marie',txt:"Oh no..."},{usr:'Chad',txt:"But I see all the commas in the numbers on my screen..."},{usr:'Boss',txt:"Really?"},{usr:'Chad',txt:"Oh yes, they're definitely there. They just camouflage well with the background. So no need for further work. And this is definitely not some \"emperor's new clothes\" bit or anything."},{usr:'Boss',txt:"...are you sure?"},{usr:'Chad',txt:"Absolutely. It's just like that song, 🎶 \"Comma Comma Comma Comma Comma Chameleon\" 🎶 "},{usr:'Marie',txt:"Uh, the song is \"KARMA Chameleon\"..."},{usr:'Chad',txt:"Not falling for it, Marie. I do the gaslighting around here."},{usr:'Ned',txt:"You have a new concept in the RegEx menu, a positive lookahead!"}],
 'hint': [{ name: 'Ned', txt: `A Positive lookahead is a way to match the preceeding regex phrase with a subsequent pattern, while NOT matching that subsequent pattern. I encourage you to play around with it and see how it works by trying different things, maybe even in the level editor`},{ name: 'Otto', txt: `Try capturing a name, and then doing a positive lookaead with it as a backreference. That's the key!`, header: 'Helpful Tip'}],
 'promptName':'Comma Chameleon',
 'maxRules':2,
 'id':'commacham'
 },
 
+'43':{
+'input':`rgb(13, 24, 0)
+rgb(255,255,255)
+rgb(256,255,255)
+rgb(232,156,,254)
+rgb(232,156,254)
+rgba(32,16,255)
+rgb(-1,1,5)
+rgb(0,0,2)
+rgb(255,255,25)
+rgb(100,100,100,54)
+rgb(153,15,53)
+rgb(100,100,100)
+rgd(99,88,100)
+rgba(69,58,130)
+rgb(66,25,3
+rgb(6,253,255)`,
+'goal':`Red: 13 Green: 24 Blue: 0
+Red: 255 Green: 255 Blue: 255
+rgb(256,255,255)
+rgb(232,156,,254)
+Red: 232 Green: 156 Blue: 254
+Red: 32 Green: 16 Blue: 255
+rgb(-1,1,5)
+Red: 0 Green: 0 Blue: 2
+Red: 255 Green: 255 Blue: 25
+rgb(100,100,100,54)
+Red: 153 Green: 15 Blue: 53
+Red: 100 Green: 100 Blue: 100
+rgd(99,88,100)
+Red: 69 Green: 58 Blue: 130
+rgb(66,25,3
+Red: 6 Green: 253 Blue: 255`,
+'prompt':[{usr:'Boss',txt:"Sorry for the radio silence team! Just got word the IT department is getting dismantled so they need us, and by us I mean you, to pick up the slack."},{usr:'Ned',txt:"Uh... I'm in the IT department and this is the first I'm hearing of this..."},{usr:'Boss',txt:"Oh. Ned. Right. I forgot you were in this chat. Chin up bud."},{usr:'Marie',txt:"We're not programmers, how can they expect us to help?"},{usr:'Boss',txt:"Well they want some help with colors or something, Ned can you explain?"},{usr:'Ned',txt:"You mean, to the people replacing me?"},{usr:'Boss',txt:"Uhh not till next week. And yes if you wouldn't mind."},{usr:'Ned',txt:"... seems like they have rgb values here and they want you to re-format all the valid ones and leave the other ones alone."},{usr:'Chad',txt:"Right, right. Easy. Brown, by the way."},{usr:'Boss',txt:"What?"},{usr:'Chad',txt:"My favorite color is brown."},{usr:'Marie',txt:"Pffft who's favorite color is BROWN??? That's insane."},{usr:'Chad',txt:"Oh, oh what - your favorite is BLUE or something? So predictable Marie."},{ usr: 'Ned', txt: `Guys? Otto and I just found out we're getting fired...`},{usr:'Chad',txt:"🤎🤎🤎🤎🤎🤎🤎"},{ usr: 'Otto', txt: `Thankfully I've been playing the free demo of this new game, <a href="javascript:window.open('https://store.steampowered.com/app/1899350/Trade_Bots_A_Technical_Analysis_Simulation/','_blank','frame=true,nodeIntegration=no')"><b>Trade Bots</b></a>. I'm learning how to develop automated trading strategies and be a quantitative analyst. Can't wait for my new career!`},{usr:'Marie',txt:"Cool!"},{usr:'Chad',txt:"Yeah, yeah. But what's your favorite color though?"},{ usr: 'Otto', txt: `GREEN 🤑🤑💰`}],
+'hint': [{ name: 'Ned', txt: `By using <b>\"<span class='c'>(?:</span>...<span class='c'>)</span>\"</b> you can use parantheses in the traditional way without capturing!`}],
+'promptName':'Color Me Confused',
+'maxRules':4,
+//'solutions':['rgba?\((?:([0-9]{1,2}|1[0-9]{1,2}|2[0-4][0-9]|25[0-5]), ?)(?:([0-9]{1,2}|1[0-9]{1,2}|2[0-4][0-9]|25[0-5]), ?)(?:([0-9]{1,2}|1[0-9]{1,2}|2[0-4][0-9]|25[0-5]))\)','Red: $1 Green: $2 Blue: $3'],
+
+// 185 chars, 1 rule
+'id':'colormeconfused'
+},
+
+
+  '44':{
+'input':`ttttt
+tttttt
+ttt
+tt
+tttt
+ttttttttttttttttttttttttttttt
+tttttt
+ttttttt
+ttttttttttt
+ttttttttt
+tttttttttt
+ttttttttttttt
+tttttttt
+ttttttttttttttttt
+tttttttttttttttttt
+ttttttttttttttttttttt
+tttttttttttt
+ttttttttttttttttttt
+ttttttttttttttttttttttttt
+tttttttttttttttt
+ttttttttttttttttttttttt
+ttttttttttttttt
+ttttttttttttttttttttttttttt
+t
+ttttttttttt`,
+'goal':`ttttt
+
+ttt
+tt
+
+ttttttttttttttttttttttttttttt
+
+ttttttt
+ttttttttttt
+
+
+ttttttttttttt
+
+ttttttttttttttttt
+
+
+
+ttttttttttttttttttt
+
+
+ttttttttttttttttttttttt
+
+
+
+ttttttttttt`,
+'prompt':[{usr:"Chad",txt:"What.... what am I looking at here?"},{usr:'Boss',txt:"Corporate finished slashing IT and they need more help... this time they need a program that can tell if a number is prime or not."},{usr:'Marie',txt:".... prime? As in, if it's evenly divisible by another number? How the heck can we help with that? 😡"},{usr:'Boss',txt:"I dunno, I just told them you guys could cover it. You can make it work!"},{usr:'Ned',txt:"RegEx is not a programming language, it's incapable of arithmetic. So HAH. They thought they could replace me but nope, what you're asking for is IMPOSSIBLE."},{usr:"Boss",txt:`"Impossible" only means you haven't found the solution yet - Vince Lombardi (probably)`},{usr:"Chad",txt:`"You are so full of BS, I'm jealous..." -- The Toilet (probably)`},{usr:'Marie',txt:`Chad, you're not helping....`},{usr:"Chad",txt:`"Ouch" -- Abraham Lincoln (probably)`},{usr:'Marie',txt:`...even if it were possible, I don't get it - what are the t's?`},{usr:'Boss',txt:`If the number of t's is prime, they want you to leave it alone, if it's not prime, they want it removed. You can do it! I believe in you. 🫵`},{usr:"Chad",txt:`"I get the feeling this isn't going to end well for any of us" -- Dinosaurs (probably)`}],
+
+'allowedFlags':["g","m"],
+'promptName':'Prime ttttttttime',
+'maxRules':3,
+//'solutions':['^t?$|^(tt+?)\1+$',''],
+//16 chars, 1 rule
+'help':{rule:2,message:{name:'Marie',txt:`You'll need the "m" flag for this puzzle, it can help you to match the beginnings and ends of individual lines. Hover over and click '/g' to change flags.`,header:'Helpful Tip'}},
+'hint':[{name:'Ned',txt:`The numbers, represented as t's, are in unary format. By matching along the string, you can remove numbers divisible by two, by doing <b><span class="b">(tt+)\\1</span>.`},{name:'Chad',txt:'No shame here in googling, I do it all the time! This is an extremely complicated problem and I heard even the developer of this game had a pretty hard time with it! (Don\'t tell anyone that btw)',header:'Helpful Tip'}],
+'id':'primetime'
+
+  },
+
+
+    '45':{
+'input':`168279435459863271273415986821354769734692518596781342615947823387526194942138657
+498236571735914628162758943581673294926845317374192865657489132819327456243561789
+869887283619214453457338664548525781275424668379969727517385163319223917621449519
+243156789519847326687392145361475892724918653895263471152684937436729518978531264
+978531264436719528152684937895263471714928653361475892687392145529847316243156789
+867539142324167859159482736275398684936241517481756923592873461743615298618924375
+863459712415273869279168354526387941947615238138942576781596423354821697692734185
+725893461841657392396142758473516829168429537952378146234761985687935214519284673
+39541267882437659167158924315692843724973518673864192598316475241285736956729381
+168759432459613278273165984821594763734982516596821347615437829387246195942378651
+145278369256389147364197258478512693589623471697431582712845936823956714931764825
+2435617898193274566574891323741928659268453175816732941627589437359146284982365716
+342571689257698143986413275861342957495726831173985426519234768734869512628157394
+954217683861453729372968145516832497249675318783149256437581962695324871128796534
+271459386435168927986273541518734269769821435342596178194387652657942813823615794
+123456789456789123564897231231564897789123456897231564312645978645978312978312645
+768593142423176859951428736184765923572389614639214587816942375295837461347651298
+271459386435168927986273541518734269769828435342596178194387652657942813823615794
+679543182158926473432817659567381294914256738283479561345792816896154327721638945
+729372968145516832497249677293729681455168324972496772937296814551683249724967
+395412678824376591671589243156928437249735186738641925983164752412857369567293814
+237541896186927345378652914743269158569178432812435679495386721924813567651794283
+341572689257698143986413275862341957495726831173985426519234768734869512628517394
+341572689257698143986413275862341957495726831173985426519234768734869512628157394
+519284673725893461841657392396142758473516829168429537952378146234761985687935214
+894158578962859187461322315913849812241742157275462973384219294849882291119423759
+754219683861453729372968145516832497249675318983147256437581962695324871128796534
+243156789529847316687392145361475892714928653895263471152684937436719528978531264
+839541267182437659367158924715692843624973518573864192298316475941285736456729381
+243561789819327456657489132374192865926845317581673294162758943735914628498236571
+867539142324167859159482736275398614936241587481756923592873461743615298618924375
+12345678945678912356489723123156489778912356F897231564312645978645978312978312645
+345678192627319458892451673468793521713524986951862347179246835534187269286935714
+123456789456789123789123456231564897564897231897231564312645978645978312978312645
+679543182158926473432817659567381294914265738283479561345792816896154327721638945
+498236571735924618162758943581673294916845327374192865657489132829317456243561789
+978531264436729518152684937895263471724918653361475892687392145519847326243156789
+237541896186927345495386721743269158569178432812435679378652914924813567651794283
+243561789829317456657489132374192865916845327581673294162758943735924618498236571`,
+'goal':`
+
+869887283619214453457338664548525781275424668379969727517385163319223917621449519
+
+978531264436719528152684937895263471714928653361475892687392145529847316243156789
+867539142324167859159482736275398684936241517481756923592873461743615298618924375
+
+
+39541267882437659167158924315692843724973518673864192598316475241285736956729381
+168759432459613278273165984821594763734982516596821347615437829387246195942378651
+145278369256389147364197258478512693589623471697431582712845936823956714931764825
+2435617898193274566574891323741928659268453175816732941627589437359146284982365716
+342571689257698143986413275861342957495726831173985426519234768734869512628157394
+
+
+123456789456789123564897231231564897789123456897231564312645978645978312978312645
+
+271459386435168927986273541518734269769828435342596178194387652657942813823615794
+679543182158926473432817659567381294914256738283479561345792816896154327721638945
+729372968145516832497249677293729681455168324972496772937296814551683249724967
+
+237541896186927345378652914743269158569178432812435679495386721924813567651794283
+341572689257698143986413275862341957495726831173985426519234768734869512628517394
+
+519284673725893461841657392396142758473516829168429537952378146234761985687935214
+894158578962859187461322315913849812241742157275462973384219294849882291119423759
+754219683861453729372968145516832497249675318983147256437581962695324871128796534
+243156789529847316687392145361475892714928653895263471152684937436719528978531264
+839541267182437659367158924715692843624973518573864192298316475941285736456729381
+
+
+12345678945678912356489723123156489778912356F897231564312645978645978312978312645
+345678192627319458892451673468793521713524986951862347179246835534187269286935714
+
+
+498236571735924618162758943581673294916845327374192865657489132829317456243561789
+
+
+243561789829317456657489132374192865916845327581673294162758943735924618498236571`,
+'prompt':[{usr:'Boss',txt:"Customers are complaining about our new Sudoku book."},{usr:'Marie',txt:"We make sudoku books?"},{usr:"Chad",txt:`We make books? Who reads books?`},{usr:"Boss",txt:`Look, I don't know anything about sudoku, but apparently some of the solutions in the answer key are fake.`},{usr:'Marie',txt:"I love Sudoku! But shouldn't the numbers be in a grid?"},{usr:'Ned',txt:`These are "unfurled". A sudoku is a 9x9 grid of 81 numbers, so you just have to imagine that a new row starts every 9 numbers.`},{usr:"Chad",txt:`I'm obviously great at sudoku, but I think Marie could use a refersher on the rules...`},{usr:'Marie',txt:`Oh please...`},{usr:"Ned",txt:`Every row, column and "nonet" must express the numbers 1-9.`},{usr:'Marie',txt:`Nonet?`},{usr:"Chad",txt:`"Ha! I knew you didn't know the rules.`},{usr:'Ned',txt:`A "nonet" is one of the 9 3x3 grids within the larger grid. These have to express the numbers 1-9 as well.`},{usr:'Boss',txt:`Find all the sudoku solutions that are invalid and remove the ones that are so we can start reprinting.`},{usr:"Marie",txt:`Come on... This is diabolical. I bet a regex expert couldn't even do this. Heck, I bet someone like... idk, the creator of a whole video game on regex would struggle aimlessly for hours trying to figure this out....`},{usr:"Chad",txt:`A video game about regex? Who would play that?`}],
+
+'allowedFlags':["g","m"],
+'promptName':'Pseudo-Ku',
+'maxRules':5,
+// solution: ^(?=((?=.{0,8}1)(?=.{0,8}2)(?=.{0,8}3)(?=.{0,8}4)(?=.{0,8}5)(?=.{0,8}6)(?=.{0,8}7)(?=.{0,8}8)(?=.{0,8}9).{9})+$)(?=((?=(.{9}){0,8}1)(?=(.{9}){0,8}2)(?=(.{9}){0,8}3)(?=(.{9}){0,8}4)(?=(.{9}){0,8}5)(?=(.{9}){0,8}6)(?=(.{9}){0,8}7)(?=(.{9}){0,8}8)(?=(.{9}){0,8}9).){9})(((?=.?.?(.{9}){0,2}1)(?=.?.?(.{9}){0,2}2)(?=.?.?(.{9}){0,2}3)(?=.?.?(.{9}){0,2}4)(?=.?.?(.{9}){0,2}5)(?=.?.?(.{9}){0,2}6)(?=.?.?(.{9}){0,2}7)(?=.?.?(.{9}){0,2}8)(?=.?.?(.{9}){0,2}9)...){3}.{18})+$
+//'solutions':['^t?$|^(tt+?)\1+$',''],
+//16 chars, 1 rule
+'help':{rule:2,message:{name:'Marie',txt:`You'll need the "m" flag for this puzzle, it can help you to match the beginnings and ends of individual lines. Hover over and click '/g' to change flags.`,header:'Helpful Tip'}},
+'hint':[{name:'Ned',txt:`Try breaking the problem down into chunks and focus on just making sure each row contains all 9 digits at first. This is how you could go about it: /^((?=.{0,8}1)(?=.{0,8}2) ... (?=.{0,8}9).{9})+$/ `},{name:'Ned',txt:'This puzzle was first proposed by Martin Ender on codegolf.stackexchange.com as part of a regex golf challenge. The developer of this game had a nightmarish time solving it so there\'s zero shame in looking it up and seeing how others found solutions!',header:'Helpful Tip'}],
+'id':'sudoku'
+
+  },
+
+
+
+
+
+
 'XXXXX':{
-'input':`syllables`,
+'input':`(([aeiouyAEIOUY]+[^e.\s])|([aiouyAEIOUY]+\b)|(\b[^aeiouy0-9.']+e\b))`,
 'goal':`oxford commas`,
 'prompt':[{usr:'Boss',txt:"Gotta fix all the oxford commas"},{usr:'Chad',txt:"Oh my god this is SO boring...."},{usr:'Chad',txt:"I'm falling asleep"},{usr:'Chad',txt:"🥱😴"},{usr:'Chad',txt:"🥱😴"}],
 'promptName':'Syll-a-bully',
@@ -1678,7 +1888,15 @@ export const regexTips: any = [
     example:
       '<i>Find: "<b><span class="c">(</span>ab<span class="c">)</span>l<span class="c">(</span>e<span class="c">)</span></b>" matches all instances of "<b>able</b>"as if parentheses are not there, but if <b><span class="c">$</span>1</b> is used in the replace function, "<b>ab</b>" is substituted, while <b><span class="c">$</span>2</b> substitutes "<b>e</b>" and so on',
   },
-
+  {
+    cmd: "\\w",
+    size: "4vh",
+    left: "1px",
+    color: "#c24699",
+    explanation: "Matches Word Character",
+    example:
+      'Matches any upper case or lower case character as well as numbers and underscores.',
+  },
   {
     cmd: "•",
     size: "6vh",
@@ -1735,15 +1953,7 @@ export const regexTips: any = [
     example:
       'Identical to "<b>s<span class="b">+</span></b></i>" but does not require at least one match of the proceeding token, can also be used lazily, i.e. "<b>X<span class="b">*?</span>X</b></i>"',
   },
-  {
-    cmd: "\\w",
-    size: "4vh",
-    left: "1px",
-    color: "#c24699",
-    explanation: "Matches Word Character",
-    example:
-      'Shorthand for "<b><span class="d">[a-zA-Z0-9_]</span></b>", "<b><span class="b">\\w</span></b>" matches any upper case or lower case character as well as numbers and underscores.',
-  },
+
     {
     cmd: "\\n",
     size: "4vh",
@@ -1789,6 +1999,15 @@ export const regexTips: any = [
     example:
       'Identical to Positive Lookahead, but only succeeds if the regex inside the lookahead <b><u>fails</u></b> to match.',
   },
+   {
+    cmd: "(?:",
+    size: "4vh",
+    left: "0px",
+    color: "#ec9b00",
+    explanation: "Non-Capture Group",
+    example:
+      'Use brackets in the traditional way without capturing.',
+  },
   // tap, tip, top
   /*
 {cmd:'\\s',color:'#c24699',explanation:'Matches a whitespace character'},
@@ -1800,19 +2019,19 @@ export const regexTips: any = [
 
 export const vulgarities: any = [];
 
-export const starChars = {'taletwocities':[21,3,'sentiment'],'middlemarch':[40,3,'ibeforee'],'ascii':[18,2,'anagraphs'],'lightness':[12,2,'stickykeys'],'romeo':[47,4,'taletwocities'],'sentiment':[81,5,'ibeforee'],'capital':[24,2,'suffix'],'hugs':[16,1,'nonotes'],'cholesterol':[21,1,'ibeforee'],'stickykeys':[23,4,'ibeforee'],'nonotes':[7,1,'noletters'],'corruption':[46,1,'suffix'],'suffix':[38,2,'suffix'],'backwards':[75,1,'noletters'],'noletters':[54,1,'noletters'],'devil':[48,4,'alpha'],'alpha':[25,2,'anagraphs'],'ibeforee':[42,3,'ibeforee'],'emails':[54,1,'emails'],'rex':[88,4,'rex'],'caesarcipher':[26,5,'alpha'],'neighbour':[32,2,'ibeforee'],'oxfordcomma':[22,1,'oxfordcomma'],'anagraphs':[41,1,'anagraphs'],'contractions':[55,4,'anagraphs'],'eek':[17,1,'possessive'],'possessive':[34,2,'possessive'],'singular':[54,3,'singular'],'oedipus':[88,4,'oedipus'],'babyshark':[110,8,'babyshark'],'gibberish':[69,7,'consonant'],'lazychess':[65,1,'lazychess'],'consonant':[50,1,'consonant'],'onlyspace':[71,5,'onlyspace'],'deduplicate':[13,1,'deduplicate'],'rhyme':[49,2,'rhyme'],'alliterate':[40,1,'alliterate'],'palindromes':[48,3,'palindromes'],'nospaces':[171,10,'nospaces'],'dedupe2':[18,1,'dedupe2'],'lovelaugh':[58,4,'lovelaugh'],'repeatedletters':[54,3,'repeatedletters'],'commacham':[32,1,'lovelaugh']}
+export const starChars = {'taletwocities':[21,3,'sentiment'],'middlemarch':[40,3,'ibeforee'],'ascii':[18,2,'anagraphs'],'lightness':[12,2,'stickykeys'],'romeo':[47,4,'taletwocities'],'sentiment':[81,5,'ibeforee'],'capital':[24,2,'suffix'],'hugs':[16,1,'nonotes'],'cholesterol':[21,1,'ibeforee'],'stickykeys':[23,4,'ibeforee'],'nonotes':[7,1,'noletters'],'corruption':[46,1,'suffix'],'suffix':[38,2,'suffix'],'backwards':[75,1,'noletters'],'noletters':[54,1,'noletters'],'devil':[48,4,'alpha'],'alpha':[25,2,'anagraphs'],'ibeforee':[42,3,'ibeforee'],'emails':[54,1,'emails'],'rex':[88,4,'rex'],'caesarcipher':[26,5,'alpha'],'neighbour':[32,2,'ibeforee'],'oxfordcomma':[22,1,'oxfordcomma'],'anagraphs':[41,1,'anagraphs'],'contractions':[55,4,'anagraphs'],'eek':[17,1,'possessive'],'possessive':[34,2,'possessive'],'singular':[54,3,'singular'],'oedipus':[88,4,'oedipus'],'babyshark':[110,8,'babyshark'],'gibberish':[69,7,'consonant'],'lazychess':[65,1,'lazychess'],'consonant':[50,1,'consonant'],'onlyspace':[71,5,'onlyspace'],'deduplicate':[13,1,'deduplicate'],'rhyme':[49,2,'rhyme'],'alliterate':[40,1,'alliterate'],'palindromes':[48,3,'palindromes'],'nospaces':[171,10,'nospaces'],'dedupe2':[18,1,'dedupe2'],'lovelaugh':[58,4,'lovelaugh'],'repeatedletters':[54,3,'repeatedletters'],'commacham':[32,1,'lovelaugh'],'colormeconfused':[185,1,'colormeconfused'],'primetime':[16,1,'primetime'],'sudoku':[463,1,'sudoku']}
 
-export const reqStars = [0,1,3,4,5,6,8,10,11,12,14,15,18,21,23,27,29,31,32,37,40,45,46,52,54,58,61,64,68,70,72,74,78,81,84,87,90,93,96,98,100,102];
-export const tipsShowTo = [1,1,2,2,2,2,3,4,4,5,5,6,8,9,10,10,11,11,12,14,15,15,16,17,17,17,18,18,18,18,18,19,19,20,20,20,20,20,21,21,22,22];
+export const reqStars = [0,1,3,4,5,6,8,10,11,12,14,15,18,21,23,27,29,31,32,37,40,45,46,52,54,58,61,64,68,70,72,74,78,81,84,87,90,93,96,98,100,102,108,120,125];
+export const tipsShowTo = [1,1,2,2,2,2,3,4,4,5,5,6,8,9,10,10,11,11,12,14,15,15,16,17,17,17,18,18,18,18,18,19,19,20,20,20,20,20,21,21,22,22,23,23,23];
 
 export const fbConfig = {
-    apiKey: "<yourAPIkey>",
-    authDomain: "<yourAuthDomain>",
-    databaseURL: "https://yourURLHere.firebaseio.com",
-    projectId: "<yourProjectID>",
-    storageBucket: "<yourStorageBucket>",
-    messagingSenderId: "<yourSenderID>",
-    appId: "<yourAppID>"
+    apiKey: "<apiKey>",
+    authDomain: "<authDomain>",
+    databaseURL: "<url>",
+    projectId: "<id>",
+    storageBucket: "<bucket>",
+    messagingSenderId: "<messgID>",
+    appId: "<appID>"
 };
 
-export const emailDomainBlacklist:any=["a45.in"]
+export const emailDomainBlacklist:any=[]

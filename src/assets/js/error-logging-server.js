@@ -1,7 +1,7 @@
 //make a localstorage key, change errors to log them to the server automatically.
 //log them to the server under that key name.
 
-const loggingServerURL = "errorServer";
+const loggingServerURL = "https://cj.jitinluthra.com/logMessage/log";
 
 function initErrorLogging(appName, appVersion, os) {
   if (!os) {

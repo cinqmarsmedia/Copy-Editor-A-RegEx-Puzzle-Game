@@ -16,7 +16,7 @@ Flags are options that alter the expression
 <div *ngFor="let flg of allFlags" [ngClass]="{'unavailable':allowed.indexOf(flg)<0}" style="font-size:3vh">
 	  <ion-checkbox [(ngModel)]="state[flg]" color="light"></ion-checkbox><div style="display:inline-block"> <span style="font-size:4vh;padding-left:5px"><b> {{flg}}</b></span>&nbsp;&nbsp;<span style="opacity:.7"><i>{{flagDict[flg].desc}}</i></span></div><div>{{flagDict[flg].explain}}</div>
 </div>
-<div style="padding-top:5vh">
+<div style="padding-top:5vh" [hidden]="allowed.length==4">
 Flags can be unlocked for a level once all three stars have been attained. For a detailed explanation of flags, click <span style="cursor:pointer" (click)="flagInfo()"><a>here</a></span>.
 </div>
 </div>

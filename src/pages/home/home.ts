@@ -28,7 +28,7 @@ import * as howler from "howler";
 declare var RegexColorizer;
 declare var ReplaceColorizer;
 
-const storageID = "<storageID>";
+const storageID = "copyEditorDataEA";
 
 const demoMODE = false; // ()()() demo
 const debugMODE = false;
@@ -758,13 +758,19 @@ export class HomePage {
 
   async handleKeyboardEvent(event: KeyboardEvent) {
 
-//if (){
+if ((event.ctrlKey || event.metaKey) && (event.key=='z' || event.key=='Z')){
+  event.preventDefault()
+  return;
+}
 
 if (lvlDB[this.level] && lvlDB[this.level].id=='caesarcipher' && !this.creationMode && !this.userLevelMode && event.key.match(/[A-z]/g) && event.key.match(/[A-z]/g).length>0 && event.key.length==1){
 
 
 
 var code = event.key.charCodeAt(0);
+
+
+
 var rez
 //console.log(event.key.match(/[A-z]/g));
 if ((event.key.match(/[A-z]/g) || []).length>0){
@@ -820,7 +826,7 @@ moveCaretToEnd(currentInput)
 
 }
 
-if (!this.mute){
+if (!this.mute && event.key!=='Shift' && event.key!=='Meta' && event.key!=='Control' && event.key!=='CapsLock' && event.key!=='Alt'){
 
 var i=Math.floor(Math.random()*9)+1;
 
@@ -1043,10 +1049,6 @@ var i=Math.floor(Math.random()*9)+1;
       }
     }
 
-    var lastChar =
-      document.activeElement.innerHTML[
-        document.activeElement.innerHTML.length - 1
-      ];
 
     if (event.key == "Enter" || event.key == "Tab") {
       event.preventDefault();
@@ -1058,9 +1060,12 @@ var i=Math.floor(Math.random()*9)+1;
         this.setFocus();
       }
     }
+// how to find the real character prior to the caret????? hard
+  var charBeforeCaret=document.activeElement.innerHTML[this.getCaretPos(document.activeElement)- 1]
+  var lastChar = document.activeElement.innerHTML[document.activeElement.innerHTML.length - 1]
 
     if (findReplaceBox) {
-      this.processTips(findInput, event, lastChar);
+      this.processTips(findInput, event, charBeforeCaret);
     }
 
   }
@@ -1073,6 +1078,8 @@ var i=Math.floor(Math.random()*9)+1;
   tipFired: any = false;
   tipsOff: any = false;
   expandedView:any=false;
+  discordOpen:any=false;
+  horizExpandedView:any=false;
   gamestate: any;
   volume:any;
   mute:any=false;
@@ -1096,8 +1103,8 @@ var i=Math.floor(Math.random()*9)+1;
   globalModal: any;
   devMode: any = false;
    //!navigator.userAgent.match(/Electron/i);
-  version: any = "1.0";
-  productionLvlsVisible: any = 42;
+  version: any = "1.7";
+  productionLvlsVisible: any = 45;
   inProgressLvl: any;
   username: any = null;
   _userSub: any;
@@ -1129,7 +1136,7 @@ var i=Math.floor(Math.random()*9)+1;
   regexUnresponsiveTimeout: any;
   slideshowstate:any=[];
   mystars:any=0;
-  slideFX:any=new howler.Howl({ src: ["/assets/audio/slide.mp3"] });
+  slideFX:any=new howler.Howl({ src: ["assets/audio/slide.mp3"] });
   elevatorMusic:any=new howler.Howl({
       src: "assets/audio/slideBck.mp3",
       loop: true,
@@ -1142,7 +1149,7 @@ var i=Math.floor(Math.random()*9)+1;
       })
   slideIndex:any=0;
   oldData:any=null;
-  unlockThresh:any={'online':10,'create':25,'procedural':75}
+  unlockThresh:any={'online':10,'create':25,'procedural':75,'discord':5}
   userScores:any={};
 
   constructor(
@@ -1152,6 +1159,8 @@ var i=Math.floor(Math.random()*9)+1;
     public events: Events,
     public db: AngularFireDatabase
   ) {
+
+    window["home"] = this;
 
 this._scoresSub = this.db
       .list("/scores")
@@ -1310,6 +1319,71 @@ Object.keys(slideshowLibrary).forEach((key)=>{
 
 }
 
+
+openDiscord(){
+
+if (this.mystars<this.unlockThresh.discord){
+  this.dispMessage('More Stars Needed','Earn stars by solving and optimizing campaign levels. If struggling, you can always use hints or check out our answer guide.');
+  return;
+}
+
+
+
+
+ this.discordOpen=true;
+
+ function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "header")) {
+        // if present, the header is where you move the DIV from:
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      } else {
+        //console.error('fires',elmnt.id + "header");
+        // otherwise, move the DIV from anywhere inside the DIV: 
+        elmnt.onmousedown = dragMouseDown;
+      }
+
+      function dragMouseDown(e) {
+
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
+
+      function elementDrag(e) {
+
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+
+      function closeDragElement() {
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+
+    }
+
+    dragElement(document.getElementById("discordFrame"));
+
+
+
+}
+
+
 startSlideShow(name){
 
 
@@ -1359,6 +1433,15 @@ this.elevatorMusic.stop();
 
 }
 
+
+openXPR(rule){
+
+
+  window.open("https://regexper.com/#"+encodeURIComponent(rule),
+                "_blank", "frame=true,nodeIntegration=no"
+              );
+}
+
   //   this.pushevent(event)
   // });
 
@@ -1389,7 +1472,7 @@ this.nightmode = val.nightmode;
 
         } else if (val.level) {
 
-if (val.version==9){
+if (val.version<10){
   this.newVersion(true);
 }
           //console.log(val.bestScores);
@@ -1479,7 +1562,7 @@ this.mystars=this.calcStars();
 
     let alert = this.alertCtrl.create({
       title: "Welcome Back!",
-      message: "Thank you for all your support during our non-profit's first early access game. We've been thrilled and humbled to learn from all of you and integrate many of your wonderful suggestions. This is our full release, but we're still hard at work building new features and additional content that will be freely updated in the near future. We're honored to be making this game and sharing it with all of you. Have fun and keep in touch by signing up for our newsletter if you haven't already!",
+      message: "Thank you for all your support of Copy Editor. We're excited to share with you our biggest update yet on the heels of our non-profit's newest released game, \"Trade Bots\". New features in v1.5 include: <br><br><li>Two New Levels</li><li>Discord Integration</li><li>RegExper (Flow Map) Integration</li><li>New UI Button to Extend Workspace</li><li>Several Bug Fixes (shout out to @vapier)</li> <br>We're so grateful to be making this game and sharing it with all of you. Have fun and keep in touch by signing up for our newsletter if you haven't already! And check out the free demo of Trade Bots on Steam or Itch.io.",
       inputs: [
         {
           name: "email",
@@ -1515,7 +1598,7 @@ this.mystars=this.calcStars();
             ) {
                  this.startSlideShow("Introduction");
               fetch(
-                "<signupEmail>",
+                "https://cinqmarsmedia.us2.list-manage.com/subscribe/post?u=551a0b16e3eff4f13cbac507b&amp;id=5e54ff5bad",
                 {
                   method: "POST",
                   mode: "no-cors",
@@ -1550,10 +1633,10 @@ this.mystars=this.calcStars();
 
   bugReport() {
     window.open(
-      "mailto:example@email.com" +
+      "mailto:bugreports@cinqmarsmedia.org?subject=Copy Editor " +
         this.version +
         "&body=Please describe how to reproduce your issue in detail. Thank you for your time and feedback!",
-      "_blank"
+      "_self", "frame=true,nodeIntegration=no"
     );
   }
 
@@ -1608,14 +1691,17 @@ return allowed;
 
 
   changeFlags(flgs,i){
-
+//console.log(this.level)
     //this.gamestate.allowedFlags=["g","m","s","i"];// (debug)
 
 //if (typeof this.gamestate.allowedFlags == 'undefined'){return}
-
+let allowed=this.gamestate.allowedFlags
+if (this.creationMode || this.userLevelMode){
+allowed=['g','i','m','s']
+}
 this.globalModal = this.modalCtrl.create(selectflags, {
       flags:flgs,
-      allowed:this.gamestate.allowedFlags,
+      allowed:allowed,
       ruleIndex:i,
       stars:this.calcLvlStars(this.gamestate.id)
     });
@@ -1737,7 +1823,7 @@ this.setData();
     this.inputGrow = 0;
 
     if (level>this.productionLvlsVisible){
-      this.dispMessage('Congratulations!','You have completed the current campaign for the game. There are 126 stars to earn in total, and if you\'re  struggling, feel free to check out our answer guide for inspiration. We hope to release new levels shortly, but in the meantime, consider playing other user\'s levels as well as creating your own! Thanks!');
+      this.dispMessage('Congratulations!','You have completed the current campaign for the game. There are 132 stars to earn in total, and if you\'re  struggling, feel free to check out our answer guide for inspiration. We hope to release new levels shortly, but in the meantime, consider playing other user\'s levels as well as creating your own! Thanks!');
 return;
     }
 /*
@@ -1994,12 +2080,12 @@ if (lvl.id == "ascii") {
 
     if (
       (event.key == "(" || event.key == ")") &&
-      lastChar !== ">" &&
+      lastChar !== ">" && lastChar !== "\\" &&
       findInput &&
       lvlDB[this.level].id == "nonotes" &&
       !tipsOff
     ) {
-      console.log(lastChar);
+
       event.preventDefault();
       this.alertMessage(
         "Ned",
@@ -2037,7 +2123,7 @@ if (lvl.id == "ascii") {
       event.preventDefault();
       this.alertMessage(
         "Ned",
-        "We have not gone over this RegEx command yet and it isn't necessary to complete your current assignment. Keep in mind that you'll have to put a \"\\\" character before it to make it <b>literal</b>",
+        "We have not gone over this RegEx command yet and it isn't necessary to complete your current assignment. Keep in mind that you'll have to put a \"\\\" character behind it to make it <b>literal</b>",
         "Helpful Tip",
         true
       );
@@ -2055,7 +2141,7 @@ if (lvl.id == "ascii") {
         ) {
           this.alertMessage(
             "Ned",
-            'To match a whitespace in the "Find" input, use the "<b><span class="b">\\s</span></b>" token. Traditional spaces are not allowed in "Find" but are in "Replace!".',
+            'To match a whitespace in the "Find" input, use the "<b><span class="b">\\s</span></b>" token. Traditional spaces are not allowed in "Find" (in this game) but are in "Replace!".',
             "Helpful Tip",
             true
           );
@@ -2070,6 +2156,9 @@ if (lvl.id == "ascii") {
         event.key == "^") &&
       !findInput
     ) {
+      if (event.key=="|" && lvlDB[this.level].id=='babyshark'){
+
+      }else{
       if (!tipsOff && !this.bestScores[lvlDB[this.level].id]) {
         event.preventDefault();
         this.alertMessage(
@@ -2078,6 +2167,7 @@ if (lvl.id == "ascii") {
           "Helpful Tip",
           true
         );
+      }
       }
     }
 
@@ -2263,7 +2353,11 @@ dispMessage(title,message){
       buttons: [
       {
           text: "Answer Guide",
-          handler: (data) => {},
+          handler: (data) => {
+
+window.open("https://blog.cinqmarsmedia.com/copy-editor-answer-star-guide-b47d1f06e663", "_blank", "frame=true,nodeIntegration=no");
+
+          },
         },
         {
           text: "Ok",
@@ -2438,7 +2532,6 @@ if (!name.includes('_')){
     // error if it isn't solved and also grayed out
 
     //this.winState=true; // DELETEEEEEE
-
     if (!this.winState) {
       var alert = this.alertCtrl.create({
         title: "Solution Needed",
@@ -2469,6 +2562,22 @@ if (!name.includes('_')){
     }
 
     //there will be your code for the expected right click action
+  }
+
+
+  getCaretPos(editableDiv: any){
+      var caretPos = 0,
+        sel: any,
+        range: any;
+      if (window.getSelection) {
+        sel = window.getSelection();
+        if (sel.rangeCount) {
+          range = sel.getRangeAt(0);
+          //console.log("CURRENT SELECTIOn", sel, sel.focusNode, sel.anchorNode)
+          caretPos = range.endOffset;
+        }
+      }
+      return caretPos;
   }
 
   scrollUp() {
@@ -2874,7 +2983,7 @@ if (!highlightActive){
       if (this.bestScores[id].rules > starChars[id][1]) {
         rule =
           '<span class="small"><i>reduce rules to <b>' +
-          starChars[id][0] +
+          starChars[id][1] +
           "</b> or fewer to earn another star</i></span>";
       }
 
@@ -2919,7 +3028,11 @@ if (!highlightActive){
             handler: (data) => {
               //console.log(this.bestScores[id].charSolution)
               this.rules = JSON.parse(this.bestScores[id].ruleSolution);
+              setTimeout(()=>{
+RegexColorizer.colorizeAll();
+ReplaceColorizer.colorizeAll();
               this.evaluateRegEx();
+              },0)
             },
           },
           {
@@ -2927,7 +3040,11 @@ if (!highlightActive){
             handler: (data) => {
               //console.log(this.bestScores[id].charSolution)
               this.rules = JSON.parse(this.bestScores[id].charSolution);
+              setTimeout(()=>{
+RegexColorizer.colorizeAll();
+ReplaceColorizer.colorizeAll();
               this.evaluateRegEx();
+              },0)
             },
           },
         ],
@@ -3127,7 +3244,7 @@ this.db.list("/scores/").push([id,rules,chars]);
                 title: "Are you sure?",
                 enableBackdropDismiss: false,
                 subTitle:
-                  "Tips can help tremendously in understanding the complexities of regular expressions",
+                  "Tips can help tremendously in understanding the complexities of regular expressions. You can re-enable any time in the menu.",
                 //message: "Are you sure you want to quit?",
                 buttons: [
                   {
@@ -3557,13 +3674,13 @@ window.open("https://blog.cinqmarsmedia.com/copy-editor-answer-star-guide-b47d1f
 if (this.version[0]=='0'){
  message="<b>Copy Editor</b> is in early access, please expect things to break and to encounter some bugs as well as imperfections. For development updates, launch discounts and news on our non-profit's other games, sign up for our non-profit's newsletter to be notified if you haven't already! We collect anonymous data on crashes and errors, the trace of the error and your operating system only.";
 }else{
- message="We are so thrilled to announce the full release of <b>Copy Editor</b>! Thank you to the community for your continued support and feedback throughout early access. For development updates and news on our non-profit's other games, sign up for our non-profit's newsletter to be notified if you haven't already! * We collect completely anonymous data on crashes and fatal errors as well as aggregate the best scores for each level.";
+ message="We are thrilled to announce the 1.5 release of <b>Copy Editor</b>! Thank you to the community for your continued support and feedback. For development updates and news on our non-profit's other games, sign up for our non-profit's newsletter to be notified if you haven't already! *We collect completely anonymous data on crashes and fatal errors as well as aggregate the best scores for each level.";
 }
       
 
     // newsletter for updates!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     var alert = this.alertCtrl.create({
-      title: "Copy Editor: " + this.version,
+      title: "Copy Editor v" + this.version,
       enableBackdropDismiss: false,
       subTitle: message,
       inputs: [

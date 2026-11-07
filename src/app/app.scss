@@ -25,6 +25,49 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.discord{
+  width:18px;
+  float:right;
+  opacity:.9
+  //margin-right:-3px
+}
+
+.discordCtrls{
+position:absolute;
+margin-left:550px;
+width:100px;
+margin-top:-25px;
+z-index:9999 !important;
+color:white;
+
+}
+
+#discordFrame{
+  position:absolute;
+  top:63px;
+z-index:9999 !important
+}
+
+.svgRegex{
+  position:absolute;
+  width:35px;
+  margin-left:10px;
+  margin-top:1px;
+  cursor:pointer;
+  opacity:.25;
+  -webkit-transition: .2s;-webkit-app-region: no-drag !important
+}
+
+.svgRegex:hover{
+-webkit-transform: scale(1.02);opacity:1 !important;
+  opacity:.8;
+}
+
+
+
+
+
+
 .pulseStar{
 
 }
@@ -40,6 +83,14 @@ input::-webkit-inner-spin-button {
   */
   width:17vh;
   max-width:21vw;
+}
+
+
+.horizExpandedCorner{
+  width:2% !important;
+}
+.horizExpandedMain{
+  width:98% !important;
 }
 
 #rulesCanvas{
@@ -267,7 +318,7 @@ height:50% !important;
 .grow2 { -webkit-transition: .2s;-webkit-app-region: no-drag !important}
 .grow2:hover { -webkit-transform: scale(1.02);cursor: pointer; cursor: hand;opacity:.8 !important}
 
-.flags { -webkit-transition: .2s;-webkit-app-region: no-drag !important}
+.flags { position:absolute;margin-top:6px;-webkit-transition: .2s;-webkit-app-region: no-drag !important}
 .flags:hover { -webkit-transform: scale(1.1);cursor: pointer; cursor: hand;}
 
 .lvlSel{
