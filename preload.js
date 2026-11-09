@@ -19,4 +19,5 @@ contextBridge.exposeInMainWorld("electron", {
   fullscreen: () => {
     ipcRenderer.send("FULLSCREEN");
   },
+  noUpload: process.argv.includes("--no-upload"),
 });

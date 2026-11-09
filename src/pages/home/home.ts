@@ -1683,6 +1683,10 @@ if (allowed){
 
 if (!allowed){
  this.shakeInput(document.activeElement.id); 
+ // the original only shook the box and let the paste through, which is how
+ // banned characters could be pasted into a solution
+ event.preventDefault();
+ return false;
 }
 
 return allowed;
@@ -2123,7 +2127,7 @@ if (lvl.id == "ascii") {
       event.preventDefault();
       this.alertMessage(
         "Ned",
-        "We have not gone over this RegEx command yet and it isn't necessary to complete your current assignment. Keep in mind that you'll have to put a \"\\\" character behind it to make it <b>literal</b>",
+        "We have not gone over this RegEx command yet and it isn't necessary to complete your current assignment. Keep in mind that you'll have to put a \"\\\" character before it to make it <b>literal</b>",
         "Helpful Tip",
         true
       );
@@ -3074,6 +3078,31 @@ ReplaceColorizer.colorizeAll();
       id = lvlDB[this.level].id;
     }
 
+    // the UI enforces the level's limits (banned characters, max find/replace
+    // length, max rules) only while typing, and paste/drag/IME slip through;
+    // never record or upload a solution that breaks them
+    var banned = this.gamestate.bannedChars || [];
+    var maxFind = this.gamestate.maxCharsFind || 999;
+    var maxRep = this.gamestate.maxCharsReplace || 999;
+    var maxRules = this.gamestate.maxRules || 999;
+    var violation = "";
+    if (
+      banned.length &&
+      this.rules.some((rule) =>
+        (rule.find + rule.replace).split("").some((c) => banned.indexOf(c) > -1)
+      )
+    ) {
+      violation = "uses characters that are not allowed on this level (" + banned.join(" ") + ")";
+    } else if (this.rules.some((rule) => rule.find.length > maxFind || rule.replace.length > maxRep)) {
+      violation = "has a rule longer than this level allows (find " + maxFind + " chars, replace " + maxRep + " chars)";
+    } else if (this.rules.length > maxRules) {
+      violation = "uses more than " + maxRules + " rules";
+    }
+    if (violation) {
+      this.dispMessage("Not Allowed", "This solution " + violation + ", so it can't be submitted.");
+      return;
+    }
+
     if (typeof this.bestScores[id] == "undefined") {
       this.bestScores[id] = {
         rules: numRules,
@@ -3100,6 +3129,10 @@ var charsBetter=this.bestScores[id].chars > totalChars
         this.uploadBest(numRules,totalChars,this.gamestate.id)
       }
     }
+
+    // persist right away; otherwise the new best only reaches storage on the
+    // next evaluateRegEx (next keystroke) and is lost if the app quits first
+    this.setData();
 
     var messag =
       attaboy[Math.floor(attaboy.length * Math.random())] +
@@ -3204,6 +3237,11 @@ this.globalModal = this.modalCtrl.create(lvlWonDialogue, {
   }
 
 uploadBest(rules,chars,id){
+  // launched with --no-upload (dev/testing): never touch the real leaderboard
+  if (window["electron"] && window["electron"].noUpload) {
+    console.log("upload skipped (--no-upload):", id, rules, chars);
+    return;
+  }
 this.db.list("/scores/").push([id,rules,chars]);
 }
 
