@@ -2123,7 +2123,7 @@ if (lvl.id == "ascii") {
       event.preventDefault();
       this.alertMessage(
         "Ned",
-        "We have not gone over this RegEx command yet and it isn't necessary to complete your current assignment. Keep in mind that you'll have to put a \"\\\" character behind it to make it <b>literal</b>",
+        "We have not gone over this RegEx command yet and it isn't necessary to complete your current assignment. Keep in mind that you'll have to put a \"\\\" character before it to make it <b>literal</b>",
         "Helpful Tip",
         true
       );
