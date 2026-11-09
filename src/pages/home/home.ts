@@ -3054,6 +3054,21 @@ ReplaceColorizer.colorizeAll();
     }
   }
 
+  // rule count and char count of a stored solution (JSON string of rules),
+  // counted the same way evaluateRegEx counts numChars
+  solutionStats(solution: any) {
+    var rules = [];
+    try {
+      rules = JSON.parse(solution) || [];
+    } catch (err) {}
+    var chars = 0;
+    rules.forEach((rule) => {
+      chars += (rule.find || "").length;
+      chars += (rule.replace || "").replace(/\\s/g, " ").length;
+    });
+    return { rules: rules.length, chars: chars };
+  }
+
   levelWon() {
     var attaboy = [
       "Nicely Done!",
