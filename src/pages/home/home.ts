@@ -53,6 +53,9 @@ export class lvlWonDialogue {
   pic:any
   btn:any
   problem:any=0;
+  // labeled summary shown under each chart (best score vs yours)
+  ruleStats:any
+  charStats:any
 
   constructor(
     public params: NavParams,
@@ -114,6 +117,10 @@ Chart.helpers.extend(Chart.controllers.line.prototype, {
 
 rules.options.scales.xAxes[0].scaleLabel.labelString="Rules"
 chars.options.scales.xAxes[0].scaleLabel.labelString="Chars"
+
+// room for markers that sit on the axis extremes
+rules.options.layout={padding:{top:10,left:10,right:10}}
+chars.options.layout={padding:{top:10,left:10,right:10}}
 
 var color1 = this.genColor()
 var color2 = this.genColor()
@@ -186,6 +193,12 @@ rules.data.datasets[1].data = yourRules;
 chars.data.datasets[0].data = charData;
 chars.data.datasets[1].data = yourChars;
 
+// best score in each distribution, labeled outside the graph and marked inside it
+this.ruleStats = this.summarize(usrData.rules, yourData[0], "rule");
+this.charStats = this.summarize(usrData.chars, yourData[1], "char");
+if (!this.ruleStats.tie) rules.data.datasets.push(this.bestMarker(this.ruleStats.best, ruleData));
+if (!this.charStats.tie) chars.data.datasets.push(this.bestMarker(this.charStats.best, charData));
+
 this.rulesChart = new Chart(this.rulesCanvas.nativeElement, rules);
 this.charsChart = new Chart(this.charsCanvas.nativeElement, chars);
 this.rulesChart.update();
@@ -198,6 +211,40 @@ this.charsChart.update();
 
 genColor(){
  return String(Math.floor(Math.random()*130)+100)+","+String(Math.floor(Math.random()*130)+100)+","+String(Math.floor(Math.random()*130)+100);
+}
+
+// best uploaded score, how many players have it, and how yours ranks
+summarize(scores, yours, unit){
+  var best = scores.reduce((a, b) => (b < a ? b : a), scores[0]);
+  var nBest = scores.filter((s) => s == best).length;
+  var worse = scores.filter((s) => s > yours).length;
+  // round down so a score with anyone ahead of it never reads "ahead of 100%"
+  var pct = Math.floor((100 * worse) / scores.length);
+  var note;
+  if (yours < best) {
+    note = "better than every upload";
+  } else if (yours == best) {
+    note = nBest == 1 ? "the best score" : "tied for best";
+  } else {
+    note = "ahead of " + pct + "% of players";
+  }
+  return { best: best, nBest: nBest, yours: yours, note: note, tie: yours <= best, unit: unit };
+}
+
+// green marker on the best score so it stands out in a dense chart
+bestMarker(best, data){
+  var y = 0;
+  data.forEach((record) => {
+    if (record.x == best) y = record.y;
+  });
+  return {
+    data: [{ x: best, y: y }],
+    backgroundColor: "rgba(111, 207, 151)",
+    borderColor: "rgba(111, 207, 151)",
+    borderWidth: 2,
+    pointStyle: "rectRot",
+    pointRadius: 6,
+  };
 }
 
 optimize(){
