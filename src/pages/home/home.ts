@@ -3054,6 +3054,21 @@ ReplaceColorizer.colorizeAll();
     }
   }
 
+  // rule count and char count of a stored solution (JSON string of rules),
+  // counted the same way evaluateRegEx counts numChars
+  solutionStats(solution: any) {
+    var rules = [];
+    try {
+      rules = JSON.parse(solution) || [];
+    } catch (err) {}
+    var chars = 0;
+    rules.forEach((rule) => {
+      chars += (rule.find || "").length;
+      chars += (rule.replace || "").replace(/\\s/g, " ").length;
+    });
+    return { rules: rules.length, chars: chars };
+  }
+
   levelWon() {
     var attaboy = [
       "Nicely Done!",
@@ -3085,13 +3100,17 @@ ReplaceColorizer.colorizeAll();
     } else {
 var rulesBetter=this.bestScores[id].rules > numRules
 var charsBetter=this.bestScores[id].chars > totalChars
+// secondary stat of each stored solution, so a tie on the primary stat
+// can still be improved (same rules but fewer chars, or vice versa)
+var ruleSolStats=this.solutionStats(this.bestScores[id].ruleSolution)
+var charSolStats=this.solutionStats(this.bestScores[id].charSolution)
 
-      if (rulesBetter) {
+      if (rulesBetter || (this.bestScores[id].rules == numRules && ruleSolStats.chars > totalChars)) {
         this.bestScores[id].rules = numRules;
         this.bestScores[id].ruleSolution = winningRules;
       }
 
-      if (charsBetter) {
+      if (charsBetter || (this.bestScores[id].chars == totalChars && charSolStats.rules > numRules)) {
         this.bestScores[id].chars = totalChars;
         this.bestScores[id].charSolution = winningRules;
       }
